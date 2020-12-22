@@ -1,0 +1,78 @@
+/*cols or grid layout?*/
+@font-face {
+	font-family: LuloCleanBold;
+	src: url("file:///C:/Users/bqacos/Documents/GitHub/baileycostello.me/fonts/LuloCleanW01-OneBold.ttf");
+}
+
+@font-face {
+	font-family: AvenirLTStd-Light;
+	src: url('/fonts/AvenirLTStd-Light.otf');
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+	
+}
+
+.text-align-center {
+	text-align: center;
+}
+.primary-font {
+	font-family: LuloCleanBold;
+	font-size: 14pt;
+	font-weight: 400;
+	position: relative;
+}
+
+.secondary-font {
+	font-family: "Times New Roman", Times, Serif;
+	font-size: 14pt;
+	font-weight: 400;
+	position: relative;
+}
+
+.tertiary-font {
+	font-family: "Times New Roman", Times, Serif;
+	font-size: 12pt;
+	font-weight: 400;
+	position: relative;
+}
+
+.vertical-horizontal-center {
+	/*margin: 0;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.vertical-bottom-horizontal-center {
+	/*margin: 0;*/
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.rightContent {
+	padding-left: 20%;
+}
+
+#sectionExperience {
+  height: 600px;
+  background-color: pink;
+}
+
+#sectionTechnicalSkills {
+  height: 600px;
+  background-color: yellow;
+}
