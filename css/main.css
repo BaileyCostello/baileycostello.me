@@ -57,10 +57,14 @@ p {
 .vertical-bottom-horizontal-center {
 	/*margin: 0;*/
 	position: absolute;
-	top: 90%;
+	top: 92%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.asset-padding {
+	padding: 8px;
 }
 
 .rightContent {

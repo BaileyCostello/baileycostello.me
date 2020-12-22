@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow/left_black</title>
+    <g id="arrow/left_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,7 L7,15 C7,16.1045695 6.1045695,17 5,17 C3.8954305,17 3,16.1045695 3,15 L3,7 L7,7 Z M15,3 C16.1045695,3 17,3.8954305 17,5 C17,6.1045695 16.1045695,7 15,7 L7,7 L7,7 L3,7 L3,4 C3,3.44771525 3.44771525,3 4,3 L15,3 Z" id="Combined-Shape" fill="#000000" transform="translate(10.000000, 10.000000) rotate(-45.000000) translate(-10.000000, -10.000000) "></path>
+    </g>
+</svg>
