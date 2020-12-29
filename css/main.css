@@ -1,3 +1,5 @@
+/* font *****************************************************************/
+
 @font-face {
 	font-family: LuloCleanBold;
 	src: url("file:///C:/Users/bqacos/Documents/GitHub/baileycostello.me/fonts/LuloCleanW01-OneBold.ttf");
@@ -11,43 +13,143 @@
 .text-align-center {
 	text-align: center;
 }
+
 .primary-font {
 	font-family: LuloCleanBold;
-	font-size: 14pt;
 	font-weight: 400;
-	position: relative;
 }
 
 .secondary-font {
 	font-family: "Times New Roman", Times, Serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 16pt;
+}
+
+h2 {
 	font-size: 14pt;
-	font-weight: 400;
-	position: relative;
 }
 
-.tertiary-font {
-	font-family: "Times New Roman", Times, Serif;
+h3 {
+	font-size: 14pt;
+}
+
+p {
 	font-size: 12pt;
-	font-weight: 400;
+}
+
+/* responsive breakpoints & positioning *************************************/
+
+
+@media screen and (max-width: 100000px) {
+	* { /* cascades to screen sizes below */
+		box-sizing: border-box;
+	}
+
+	.center {
+		padding:8px;
+		float:left;
+		width:60%;
+	}
+
+	.left, .right {
+		padding:8px;
+		float:left;
+		width:20%;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.center {
+		background-color: #FFFFFF;
+		padding:8px;
+		float:left;
+		width:80%;
+		height: auto;
+	}
+
+	.left, .right {
+		background-color: #456789;
+		padding:8px;
+		float:left;
+		width:10%;
+		height: 100vh;
+	}
+
+	.landing-content {
+		height: 90vh;
+  	}
+}
+
+@media screen and (max-width: 750px) { /* The width is 100%, when the viewport is 750px or smaller */
+	.left, .center, .right {
+		width: 100%;
+	}
+
+	.center {
+		height: auto;
+	}
+
+	.left, .right { /* how do you make the .left and .right inherit the height of the .center? When the .center is larger than the viewport they do not line up */
+		height: 20vh;
+	}
+
+	.landing-content { /* this needs to be below width 100% */
+		height: 60vh;
+	}
+}
+
+
+
+.vertical-center {
 	position: relative;
+	top: 50%; /*50% of the container's height*/
+	-webkit-transform: translate(0, -50%); /*-50% of the height of the object*/
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 }
 
-.vertical-horizontal-center {
-	/*margin: 0;*/
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+.vertical-bottom {
+	/* position: relative; */
+	top: 75%;
+	-webkit-transform: translate(0, -75%);
+	-ms-transform: translate(0, -75%);
+	transform: translate(0, -75%);
 }
 
-.vertical-bottom-horizontal-center {
-	/*margin: 0;*/
-	position: absolute;
-	top: 92%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+.horizontal-center {
+	/* position: relative; */
+	left: 50%; /*50% of the container's width*/
+	-webkit-transform: translate(-50%, 0); /*-50% of the width of the object*/
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+/*************************************************************/
+
+/*.scrollbar {  JS - how many sections are on this page, what section is it currently scrolled to?
+	width: 6px;
+	height: 50vh;
+	background-color: #000000;
+	border-radius: 50px;
+	left: 99%;
+	top: 25%;
+	position: fixed;
+}
+*/
+
+/* CSS animations https://www.w3schools.com/css/css3_animations.asp */
+
+@keyframes down-arrow {
+	0%		{top: 75%;}
+	20%		{top: 75%;}
+	25%		{top: 76%;}
+	30%		{top: 75.5%;}
+	35%		{top: 76%;}
+	40%		{top: 75%;}
+	100%	{top: 75%;}
 }
 
 .down-arrow {
@@ -58,16 +160,4 @@
 	animation-delay: 3s;
 	animation-iteration-count: 4;
 	animation-timing-function: linear;
-}
-
-/* animations */
-
-@keyframes down-arrow {
-	0%		{top: 0px;}
-	20%		{top: 0px;}
-	25%		{top: 4px;}
-	30%		{top: 2px;}
-	35%		{top: 4px;}
-	40%		{top: 0px;}
-	100%	{top: 0px;}
 }
