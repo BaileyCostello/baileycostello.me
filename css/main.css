@@ -63,7 +63,6 @@ p {
 
 @media screen and (max-width: 1600px) {
 	.center {
-		background-color: #FFFFFF;
 		padding:8px;
 		float:left;
 		width:80%;
@@ -71,7 +70,6 @@ p {
 	}
 
 	.left, .right {
-		background-color: #456789;
 		padding:8px;
 		float:left;
 		width:10%;
@@ -111,14 +109,6 @@ p {
 	transform: translate(0, -50%);
 }
 
-.vertical-bottom {
-	/* position: relative; */
-	top: 75%;
-	-webkit-transform: translate(0, -75%);
-	-ms-transform: translate(0, -75%);
-	transform: translate(0, -75%);
-}
-
 .horizontal-center {
 	/* position: relative; */
 	left: 50%; /*50% of the container's width*/
@@ -128,6 +118,16 @@ p {
 }
 
 /*************************************************************/
+
+body {
+	margin: 0;
+}
+
+.footer {
+	background-color: #000000;
+	height: 260px;
+	width: 100%;
+}
 
 /*.scrollbar {  JS - how many sections are on this page, what section is it currently scrolled to?
 	width: 6px;
@@ -143,13 +143,13 @@ p {
 /* CSS animations https://www.w3schools.com/css/css3_animations.asp */
 
 @keyframes down-arrow {
-	0%		{top: 75%;}
-	20%		{top: 75%;}
-	25%		{top: 76%;}
-	30%		{top: 75.5%;}
-	35%		{top: 76%;}
-	40%		{top: 75%;}
-	100%	{top: 75%;}
+	0%		{top: 0px;}
+	20%		{top: 0px;}
+	25%		{top: 4px;}
+	30%		{top: 2px;}
+	35%		{top: 4px;}
+	40%		{top: 0px;}
+	100%	{top: 0px;}
 }
 
 .down-arrow {
