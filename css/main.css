@@ -42,6 +42,7 @@ p {
 
 /* responsive breakpoints & positioning *************************************/
 
+/*https://www.w3schools.com/html/html_responsive.asp*/
 
 @media screen and (max-width: 100000px) {
 	* { /* cascades to screen sizes below */
@@ -121,6 +122,10 @@ p {
 
 body {
 	margin: 0;
+}
+
+button {
+	font-size: 14pt;
 }
 
 .footer {
