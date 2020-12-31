@@ -4,20 +4,16 @@
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="gtf-8"/>-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
-		<script src="js/main.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
 		<title>Home</title>
-		<script type="text/javascript">
-			//document.write("Hello, I'm Bailey Costello <br/>");
-			//document.write("User Experience and Product Designer <br/>");
-			//document.write("I design beautiful and usable experiences for humans <br/>");
-		</script>
 	</head>
 	
 	<body>
 
 		<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+		
 		<div>
-			<div class="left"></div>
+			<div class="left" id="Home"></div>
 			<div class="center landing-content">
 				<h2 class="text-align-center vertical-center"> 
 					<span class="primary-font">Hello, I'm Bailey Costello</span>
@@ -36,9 +32,10 @@
 			</div>
 			<div class="right"></div>
 		</div>
+
 		<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-		<div class="left"></div>
+		<div class="left" id="Projects"></div>
 			<div class="center">
 				<h1 class="primary-font">Dashboard Builder Redesign
 					<br/>
@@ -83,6 +80,7 @@
 			<div class="right"></div>
 
 			<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+			
 			<div class="left"></div>
 			<div class="center">
 				<h1 class="primary-font">Strategic Services Website
@@ -138,8 +136,45 @@
 
 		<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-			<div class="left footer" style="background-color: #FFFFFF; height: 42px;"></div>
+			<!-- Cannot include footer as a separate file when not on a server, see: 
+			https://www.w3schools.com/howto/howto_html_include.asp
+			https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local
+
+			<div w3-include-html="footer.html"></div>
+			<script>includeHTML();</script> -->
+
+			<div class="left spacer"></div>
 			<div class="left footer"></div>
+			<div class="center-column-one footer">
+				<br/>
+				<span class="primary-font">Contact Me</span>
+				<br/>
+				<form action="mailto:bqacos@gmail.com" method="post" enctype="text/plain">
+					<span class="tertiary-font">Name:</span>
+					<br/>
+					<input type="text" name="name"><br>
+					<span class="tertiary-font">E-mail:</span>
+					<br/>
+					<input type="text" name="mail"><br>
+					<span class="tertiary-font">Message:</span>
+					<br/>
+					<input type="text" name="comment" size="50">
+					<br/>
+					<br/>
+					<input type="submit" value="Send" class="button">
+				</form>
+			</div>
+			<div class="center-column-two footer">
+				<br/>
+				<span class="primary-font">Navigation</span>
+				<br/>
+				<a href="#Home" class="secondary-font">Home</a>
+				<br/>
+				<a href="#Projects" class="secondary-font">Projects</a>
+				<br/>
+				<a href="#Resume" class="secondary-font">Resume</a>
+			</div>
+			<div class="right footer"></div>
 		
 		<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
 

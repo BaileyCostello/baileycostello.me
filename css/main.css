@@ -70,6 +70,20 @@ p {
 		height: auto;
 	}
 
+	.center-column-one {
+		padding:8px;
+		float:left;
+		width:40%;
+		height: auto;
+	}
+
+	.center-column-two {
+		padding:8px;
+		float:left;
+		width:40%;
+		height: auto;
+	}
+
 	.left, .right {
 		padding:8px;
 		float:left;
@@ -80,14 +94,18 @@ p {
 	.landing-content {
 		height: 90vh;
   	}
+
+  	.footer {
+  		height: 40vh;
+  	}
 }
 
 @media screen and (max-width: 750px) { /* The width is 100%, when the viewport is 750px or smaller */
-	.left, .center, .right {
+	.left, .center, .center-column-one, .center-column-two, .right {
 		width: 100%;
 	}
 
-	.center {
+	.center, .center-column-one, .center-column-two {
 		height: auto;
 	}
 
@@ -98,9 +116,11 @@ p {
 	.landing-content { /* this needs to be below width 100% */
 		height: 60vh;
 	}
+
+	.footer {
+		height: auto;
+	}
 }
-
-
 
 .vertical-center {
 	position: relative;
@@ -118,6 +138,12 @@ p {
 	transform: translate(-50%, 0);
 }
 
+.spacer {
+	background-color: #FFFFFF;
+	 height: 10vh; 
+	 width: 100%;
+}
+
 /*************************************************************/
 
 body {
@@ -129,9 +155,8 @@ button {
 }
 
 .footer {
+	color: #FFFFFF;
 	background-color: #000000;
-	height: 260px;
-	width: 100%;
 }
 
 /*.scrollbar {  JS - how many sections are on this page, what section is it currently scrolled to?
