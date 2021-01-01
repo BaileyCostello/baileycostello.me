@@ -26,7 +26,7 @@
 					<br/>
 					<br/>
 					<br/>
-					<img class="down-arrow" src="assets/downarrow_black.svg" data-fallback="assets/leftarrow_black.png" alt="Scroll down and get to know me">
+					<a href="#Projects" class="button-ghost"><img class="down-arrow" src="assets/downarrow_black.svg" data-fallback="assets/leftarrow_black.png" alt="Scroll down and get to know me"></a>
 				</h2>
 
 			</div>
@@ -74,8 +74,11 @@
 					<br/>
 					<span>Axure, Building the Prototype</span>
 				</p>
-
-				<button class="primary-font">Details <img src="assets/rightarrow_black.svg" data-fallback="assets/rightarrow_black.png" alt="Click to read about the project in depth."></button>
+				<form>
+				<!--https://karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans
+					links are not buttons. Use a link when navigating to another page, use a button when performing an action <a></a>-->
+				<a href="projects/DashboardBuilder_Exago.html" class="button">Details <img src="assets/rightarrow_black.svg" data-fallback="assets/rightarrow_black.png" style="height: 16px;" alt="Click to read about the project in depth."></a>
+				</form>
 			</div>
 			<div class="right"></div>
 
@@ -130,7 +133,7 @@
 					<span>SharePoint Designer, Developing and Hosting the Website</span>
 				</p>
 
-				<button class="primary-font">Details <img src="assets/rightarrow_black.svg" data-fallback="assets/rightarrow_black.png" alt="Click to read about the project in depth."></button>
+				<a href="projects/StrategicServicesSite_FCSA.html" class="button">Details <img src="assets/rightarrow_black.svg" data-fallback="assets/rightarrow_black.png" style="height: 16px;" alt="Click to read about the project in depth."></a>
 			</div>
 			<div class="right"></div>
 
@@ -161,18 +164,18 @@
 					<input type="text" name="comment" size="50">
 					<br/>
 					<br/>
-					<input type="submit" value="Send" class="button">
+					<button type="submit" value="Send" class="button button-inverted">Send</button>
 				</form>
 			</div>
 			<div class="center-column-two footer">
 				<br/>
 				<span class="primary-font">Navigation</span>
 				<br/>
-				<a href="#Home" class="secondary-font">Home</a>
+				<a href="#Home" class="secondary-font" style="color: #FFFFFF; text-decoration: underline;">Home</a>
 				<br/>
-				<a href="#Projects" class="secondary-font">Projects</a>
+				<a href="#Projects" class="secondary-font" style="color: #FFFFFF; text-decoration: underline;">Projects</a>
 				<br/>
-				<a href="#Resume" class="secondary-font">Resume</a>
+				<a href="#Resume" class="secondary-font" style="color: #FFFFFF; text-decoration: underline;">Resume</a>
 			</div>
 			<div class="right footer"></div>
 		

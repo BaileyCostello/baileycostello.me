@@ -150,8 +150,38 @@ body {
 	margin: 0;
 }
 
-button {
+.button {
+	font-family: LuloCleanBold;
+	font-weight: 400;
 	font-size: 14pt;
+	color: #000000;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid #000000;
+	padding: 4px 12px 4px 12px;
+	text-decoration: none;
+}
+
+.button-inverted {
+	color: #FFFFFF; 
+	border: 2px solid #FFFFFF;
+}
+
+.button-ghost {
+	font-family: LuloCleanBold;
+	font-weight: 400;
+	font-size: 14pt;
+	color: #000000;
+	background-color: rgba(0,0,0,0);
+	padding: 4px 12px 4px 12px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.button-inverted:hover {
+	background-color: rgba(255,255,255,0.1);
 }
 
 .footer {
