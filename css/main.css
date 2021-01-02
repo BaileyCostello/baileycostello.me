@@ -184,6 +184,16 @@ body {
 	background-color: rgba(255,255,255,0.1);
 }
 
+.link {
+	color: #000000; 
+	text-decoration: underline;
+}
+
+.link-inverted {
+	color: #FFFFFF; 
+	text-decoration: underline;
+}
+
 .footer {
 	color: #FFFFFF;
 	background-color: #000000;
