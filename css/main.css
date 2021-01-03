@@ -10,17 +10,27 @@
 	src: url('/fonts/AvenirLTStd-Light.otf');
 }
 
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Lora', serif;
+	src: url('/fonts/Lora-Regular.ttf');
+}
+
 .text-align-center {
 	text-align: center;
 }
 
 .primary-font {
-	font-family: LuloCleanBold;
+	font-family: Montserrat;
 	font-weight: 400;
 }
 
 .secondary-font {
-	font-family: "Times New Roman", Times, Serif;
+	font-family: Lora;
 	font-weight: 400;
 }
 
