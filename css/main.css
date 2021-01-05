@@ -1,4 +1,7 @@
 /* font *****************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 @font-face {
 	font-family: LuloCleanBold;
@@ -12,7 +15,7 @@
 
 @font-face {
 	font-family: 'Montserrat', sans-serif;
-	src: url("/fonts/Montserrat-Regular.ttf");
+	src: url('/fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
@@ -24,30 +27,84 @@
 	text-align: center;
 }
 
-.primary-font {
+.primary-font-semi-bold {
 	font-family: Montserrat;
-	font-weight: 400;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.primary-font-medium {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.subtitle {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14pt;
 }
 
 .secondary-font {
 	font-family: Lora;
+	text-transform: none;
 	font-weight: 400;
 }
 
 h1 {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-weight: 600;
 	font-size: 16pt;
+	margin: 0;
+	padding-top: 0;
 }
 
 h2 {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-weight: 500;
 	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
 }
 
 h3 {
+	font-family: Montserrat;
+	font-weight: 400;
 	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
 }
 
 p {
+	font-family: Lora;
+	font-weight: 400;
 	font-size: 12pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+a {
+	font-family: Lora;
+	font-weight: 400;
+	font-size: 12pt;
+}
+
+.button {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.button-ghost {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14pt;
+	text-decoration: none;
 }
 
 /* responsive breakpoints & positioning *************************************/
@@ -102,7 +159,7 @@ p {
 	}
 
 	.landing-content {
-		height: 90vh;
+		height: 100vh;
   	}
 
   	.footer {
@@ -161,14 +218,10 @@ body {
 }
 
 .button {
-	font-family: LuloCleanBold;
-	font-weight: 400;
-	font-size: 14pt;
 	color: #000000;
 	background-color: rgba(0,0,0,0);
 	border: 2px solid #000000;
 	padding: 4px 12px 4px 12px;
-	text-decoration: none;
 }
 
 .button-inverted {
@@ -177,13 +230,9 @@ body {
 }
 
 .button-ghost {
-	font-family: LuloCleanBold;
-	font-weight: 400;
-	font-size: 14pt;
 	color: #000000;
 	background-color: rgba(0,0,0,0);
 	padding: 4px 12px 4px 12px;
-	text-decoration: none;
 }
 
 .button:hover {
