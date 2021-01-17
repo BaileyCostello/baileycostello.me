@@ -120,14 +120,38 @@ a {
 	.center {
 		padding:8px;
 		float:left;
-		width:60%;
+		width:80%;
+		height: auto;
+	}
+
+	.center-column-one { /* place within div with class .center takes up 50% of 80%*/
+		padding:8px;
+		float:left;
+		width:50%;
+		height: auto;
+	}
+
+	.center-column-two {
+		padding:8px;
+		float:left;
+		width:50%;
+		height: auto;
 	}
 
 	.left, .right {
 		padding:8px;
 		float:left;
-		width:20%;
+		width:10%;
+		height: 100vh;
 	}
+
+	.landing-content {
+		height: 100vh;
+  	}
+
+  	.footer {
+  		height: 40vh;
+  	}
 }
 
 @media screen and (max-width: 1600px) {
