@@ -248,6 +248,10 @@ a {
   	}
 }
 
+.header {
+	float: right;
+}
+
 .vertical-center {
 	position: relative;
 	top: 50%; /*50% of the container's height*/
