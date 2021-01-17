@@ -120,7 +120,7 @@ a {
 	.center {
 		padding:8px;
 		float:left;
-		width:80%;
+		width:60%;
 		height: auto;
 	}
 
@@ -141,7 +141,7 @@ a {
 	.left, .right {
 		padding:8px;
 		float:left;
-		width:10%;
+		width:20%;
 		height: 100vh;
 	}
 
