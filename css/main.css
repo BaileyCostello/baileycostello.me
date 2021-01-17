@@ -97,6 +97,7 @@ a {
 	font-weight: 600;
 	font-size: 14pt;
 	text-decoration: none;
+	border-radius: 8px;
 }
 
 .button-ghost {
@@ -137,17 +138,17 @@ a {
 		height: auto;
 	}
 
-	.center-column-one {
+	.center-column-one { /* place within div with class .center takes up 50% of 80%*/
 		padding:8px;
 		float:left;
-		width:40%;
+		width:50%;
 		height: auto;
 	}
 
 	.center-column-two {
 		padding:8px;
 		float:left;
-		width:40%;
+		width:50%;
 		height: auto;
 	}
 
@@ -164,6 +165,33 @@ a {
 
   	.footer {
   		height: 40vh;
+  	}
+}
+
+@media screen and (max-width: 1110px) {
+  	.dashboard-img {
+  		margin-top: 4%;
+  		-webkit-transform: translate(0, -4%);
+		-ms-transform: translate(0, -4%);
+		transform: translate(0, -4%);
+  	}
+}
+
+@media screen and (max-width: 990px) {
+  	.dashboard-img {
+  		margin-top: 12%;
+  		-webkit-transform: translate(0, -12%);
+		-ms-transform: translate(0, -12%);
+  		transform: translate(0, -12%);
+  	}
+ }
+
+ @media screen and (max-width: 860px) {
+  	.dashboard-img {
+  		margin-top: 20%;
+  		-webkit-transform: translate(0, -20%);
+		-ms-transform: translate(0, -20%);
+  		transform: translate(0, -20%);
   	}
 }
 
@@ -187,6 +215,13 @@ a {
 	.footer {
 		height: auto;
 	}
+
+	.dashboard-img {
+  		margin-top: 0%;
+   		-webkit-transform: translate(0, -0%);
+		-ms-transform: translate(0, -0%);
+  		transform: translate(0, -0%);
+  	}
 }
 
 .vertical-center {
