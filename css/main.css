@@ -27,33 +27,16 @@
 	text-align: center;
 }
 
-.primary-font-semi-bold {
+.landing-page-text {
 	font-family: Montserrat;
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
-.primary-font-medium {
-	font-family: Montserrat;
-	text-transform: uppercase;
 	font-weight: 500;
-}
-
-.subtitle {
-	font-family: Montserrat;
-	font-weight: 400;
-	font-size: 14pt;
-}
-
-.secondary-font {
-	font-family: Lora;
-	text-transform: none;
-	font-weight: 400;
+	font-size: 16pt;
+	margin: 0;
+	padding-top: 0;
 }
 
 h1 {
 	font-family: Montserrat;
-	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 16pt;
 	margin: 0;
@@ -62,7 +45,6 @@ h1 {
 
 h2 {
 	font-family: Montserrat;
-	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 14pt;
 	margin: 0;
@@ -78,7 +60,7 @@ h3 {
 }
 
 p {
-	font-family: Lora;
+	font-family: Montserrat;
 	font-weight: 400;
 	font-size: 12pt;
 	margin: 0;
