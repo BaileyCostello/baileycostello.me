@@ -7,8 +7,8 @@ function closest(e, t){
 
 /*window.onload=function() { //wait for DOM to load to get elements
 */
-  var dropdown = document.getElementById("nav-dropdown");
-  var menuButton = document.getElementById("nav-button");
+  dropdown = document.getElementById("nav-dropdown");
+  menuButton = document.getElementById("nav-button");
 
   menuButton.addEventListener("click", function(e) {
     dropdown.style.display = "block";
