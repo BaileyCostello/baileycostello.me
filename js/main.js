@@ -1,6 +1,9 @@
 /*javascript*/
 
-function closest(e, t){ 
+var dropdown = document.getElementById("nav-dropdown");
+var menuButton = document.getElementById("nav-button");
+
+function closest(e, t) { 
  /* if(!e){ // if there is no event (where the event is a click)
     return false;
   }
@@ -14,13 +17,7 @@ function closest(e, t){
   return !e ? false : e === t ? true : closest(e.parentNode, t);
 }
 
-
-/* window.onload=function() { //wait for DOM to load to get elements
-*/
-  var dropdown = document.getElementById("nav-dropdown");
-  var menuButton = document.getElementById("nav-button");
-
-  if (menuButton) {
+if (menuButton) {
   menuButton.addEventListener("click", function(e) {
     dropdown.style.display = "block";
     /* menu.disabled = true; */
