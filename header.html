@@ -42,7 +42,8 @@
 		</div>
 		<div id="header" style="height: 20px; width: 100%; float: left;"></div>
 
-		<script type="text/javascript">  var dropdown = document.getElementById("nav-dropdown");
+		<script type="text/javascript">  
+			var dropdown = document.getElementById("nav-dropdown");
   var menuButton = document.getElementById("nav-button");
 
   function closest(e, t) { 
@@ -63,12 +64,13 @@
     menuButton.addEventListener("click", function(e) {
       dropdown.style.display = "block";
       /* menu.disabled = true; */
-      /*  if (dropdown.style.display === "none") {
+      
+      if (dropdown.style.display === "none") {
         dropdown.style.display = "block";
       } else {
         dropdown.style.display = "none";
       }
-      */
+      
       e.stopPropagation();
     });
 
@@ -81,5 +83,6 @@
   }
   else {
     console.log('could not find nav-button');
-  }</script>
+  }
+</script>
 	<!--</body>-->
