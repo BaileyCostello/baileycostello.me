@@ -1,5 +1,9 @@
 /*javascript*/
 
+function showDiv() {
+   document.getElementById('nav-dropdown').style.display = "block";
+}
+
 function svgasimg() { /*https://css-tricks.com/a-complete-guide-to-svg-fallbacks/*/
   return document.implementation.hasFeature(
     "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
