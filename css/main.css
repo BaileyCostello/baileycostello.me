@@ -271,7 +271,7 @@ a {
   position: absolute;
   right: 8px;
   min-width: 160px;
-  border-radius: 10px
+  border-radius: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin: 4px 6px;
@@ -288,10 +288,11 @@ a {
   background-color: #ddd;
 }
 
+/*
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+*/
 /*****************************************************************/
 
 .vertical-center {
