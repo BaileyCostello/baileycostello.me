@@ -5,30 +5,30 @@ function closest(e, t){
 }
 
 
-window.onload=function() { //wait for DOM to load to get elements
-  
-var dropdown = document.getElementById("nav-dropdown");
-var menuButton = document.getElementById("nav-button");
+/*window.onload=function() { //wait for DOM to load to get elements
+*/
+  var dropdown = document.getElementById("nav-dropdown");
+  var menuButton = document.getElementById("nav-button");
 
-menuButton.addEventListener("click", function(e) {
-  dropdown.style.display = "block";
-  /* menu.disabled = true; */
-    if (dropdown.style.display === "none") {
+  menuButton.addEventListener("click", function(e) {
     dropdown.style.display = "block";
-  } else {
-    dropdown.style.display = "none";
-  }
-  e.stopPropagation();
-});
-
-document.body.addEventListener("click", function(e) {
-    if (!closest(e.target, dropdown)) {
-        dropdown.style.display = "none";
-        /* menu.disabled = false; */
+    /* menu.disabled = true; */
+    /*  if (dropdown.style.display === "none") {
+      dropdown.style.display = "block";
+    } else {
+      dropdown.style.display = "none";
     }
-});
+    */
+    e.stopPropagation();
+  });
 
-}
+  document.body.addEventListener("click", function(e) {
+      if (!closest(e.target, dropdown)) {
+          dropdown.style.display = "none";
+          /* menu.disabled = false; */
+      }
+  });
+
 /*
 function showDiv() {
    document.getElementById('nav-dropdown').style.display = "block";
