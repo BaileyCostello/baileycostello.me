@@ -1,44 +1,47 @@
 /*javascript*/
 
-var dropdown = document.getElementById("nav-dropdown");
-var menuButton = document.getElementById("nav-button");
+window.onload=function() {
 
-function closest(e, t) { 
- /* if(!e){ // if there is no event (where the event is a click)
-    return false;
+  var dropdown = document.getElementById("nav-dropdown");
+  var menuButton = document.getElementById("nav-button");
+
+  function closest(e, t) { 
+   /* if(!e){ // if there is no event (where the event is a click)
+      return false;
+    }
+    else if(e === t) { // if event is t (where t is the dropdown)
+      return true;
+    }
+    else {
+      return closest(e.parentNode, t);
+    } */
+
+    return !e ? false : e === t ? true : closest(e.parentNode, t);
   }
-  else if(e === t) { // if event is t (where t is the dropdown)
-    return true;
+
+  if (menuButton) {
+    menuButton.addEventListener("click", function(e) {
+      dropdown.style.display = "block";
+      /* menu.disabled = true; */
+      /*  if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+      */
+      e.stopPropagation();
+    });
+
+    document.body.addEventListener("click", function(e) {
+        if (!closest(e.target, dropdown)) {
+            dropdown.style.display = "none";
+            /* menu.disabled = false; */
+        }
+    });
   }
   else {
-    return closest(e.parentNode, t);
-  } */
-
-  return !e ? false : e === t ? true : closest(e.parentNode, t);
-}
-
-if (menuButton) {
-  menuButton.addEventListener("click", function(e) {
-    dropdown.style.display = "block";
-    /* menu.disabled = true; */
-    /*  if (dropdown.style.display === "none") {
-      dropdown.style.display = "block";
-    } else {
-      dropdown.style.display = "none";
-    }
-    */
-    e.stopPropagation();
-  });
-
-  document.body.addEventListener("click", function(e) {
-      if (!closest(e.target, dropdown)) {
-          dropdown.style.display = "none";
-          /* menu.disabled = false; */
-      }
-  });
-}
-else {
-  console.log('could not find nav-button');
+    console.log('could not find nav-button');
+  }
 }
 
 
