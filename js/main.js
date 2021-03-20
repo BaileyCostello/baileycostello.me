@@ -4,8 +4,11 @@ function closest(e, t){
   return !e? false : e === t ? true : closest(e.parentNode, t);
 }
 
+
+window.onload=function(){
 var dropdown = document.getElementById("nav-dropdown");
 var menuButton = document.getElementById("nav-button");
+}
 
 menuButton.addEventListener("click", function(e) {
   dropdown.style.display = "block";
