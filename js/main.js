@@ -15,11 +15,12 @@ function closest(e, t){
 }
 
 
-window.onload=function() { //wait for DOM to load to get elements
-
+/* window.onload=function() { //wait for DOM to load to get elements
+*/
   var dropdown = document.getElementById("nav-dropdown");
   var menuButton = document.getElementById("nav-button");
 
+  if (menuButton) {
   menuButton.addEventListener("click", function(e) {
     dropdown.style.display = "block";
     /* menu.disabled = true; */
