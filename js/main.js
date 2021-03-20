@@ -40,6 +40,9 @@ function closest(e, t){
       }
   });
 }
+else {
+  console.log(could not find "nav-button");
+}
 /*
 function showDiv() {
    document.getElementById('nav-dropdown').style.display = "block";
