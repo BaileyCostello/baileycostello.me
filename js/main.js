@@ -1,14 +1,24 @@
 /*javascript*/
 
 function closest(e, t){ 
-  return !e? false : e === t ? true : closest(e.parentNode, t);
+ /* if(!e){ // if there is no event (where the event is a click)
+    return false;
+  }
+  else if(e === t) { // if event is t (where t is the dropdown)
+    return true;
+  }
+  else {
+    return closest(e.parentNode, t);
+  } */
+
+  return !e ? false : e === t ? true : closest(e.parentNode, t);
 }
 
 
-/*window.onload=function() { //wait for DOM to load to get elements
-*/
-  dropdown = document.getElementById("nav-dropdown");
-  menuButton = document.getElementById("nav-button");
+window.onload=function() { //wait for DOM to load to get elements
+
+  var dropdown = document.getElementById("nav-dropdown");
+  var menuButton = document.getElementById("nav-button");
 
   menuButton.addEventListener("click", function(e) {
     dropdown.style.display = "block";
@@ -28,7 +38,7 @@ function closest(e, t){
           /* menu.disabled = false; */
       }
   });
-
+}
 /*
 function showDiv() {
    document.getElementById('nav-dropdown').style.display = "block";
