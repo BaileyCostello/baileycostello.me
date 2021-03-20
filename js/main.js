@@ -5,10 +5,10 @@ function closest(e, t){
 }
 
 
-window.onload=function(){
+window.onload=function() { //wait for DOM to load to get elements
+  
 var dropdown = document.getElementById("nav-dropdown");
 var menuButton = document.getElementById("nav-button");
-}
 
 menuButton.addEventListener("click", function(e) {
   dropdown.style.display = "block";
@@ -28,6 +28,7 @@ document.body.addEventListener("click", function(e) {
     }
 });
 
+}
 /*
 function showDiv() {
    document.getElementById('nav-dropdown').style.display = "block";
