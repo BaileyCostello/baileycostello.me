@@ -38,13 +38,9 @@ if (menuButton) {
   });
 }
 else {
-  console.log(could not find "nav-button");
+  console.log('could not find nav-button');
 }
-/*
-function showDiv() {
-   document.getElementById('nav-dropdown').style.display = "block";
-}
-*/
+
 
 function svgasimg() { /*https://css-tricks.com/a-complete-guide-to-svg-fallbacks/*/
   return document.implementation.hasFeature(
