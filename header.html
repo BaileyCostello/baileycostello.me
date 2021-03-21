@@ -1,67 +1,81 @@
-<div id="header" style="height: 20px; width: 100%; float: left;"></div>
-<div class="subtitle">
-	<a href="baileycostello.me" style="float: left; padding-left: 36px;"><img src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;"></a>
+<!--<!DOCTYPE html>
+<html lang="en">
+	<head>																	<!-- makes mobile not zoomable -->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="gtf-8"/>-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+		<script src="js/main.js" type="text/javascript"></script>
+		<title>Home</title>
+	</head>
+	<body>-->
+		<div id="header" style="height: 20px; width: 100%; float: left;"></div>
+		<div class="subtitle">
+			<a href="baileycostello.me" style="float: left; padding-left: 36px;"><img src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;"></a>
 
-	<!-- Navigation Bar for desktop and tablet screen sizes-->
-	<div style="float: right;">
-		<a>
-			<img  class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
-		</a>
-		<a>
-			<img class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
-		</a>
-	</div>
-	<div style="float: right; padding-right: 20px; padding-top: 20px;">
-		<a href="#" class="navigation-item">My Work</a>
-		<a href="#" class="navigation-item">Resume</a>
-		<a href="#" class="navigation-item">About</a>
-	</div>
+			<!-- Navigation Bar for desktop and tablet screen sizes-->
+			<div style="float: right;">
+				<a>
+					<img  class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
+				</a>
+				<a>
+					<img class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
+				</a>
+			</div>
+			<div style="float: right; padding-right: 20px; padding-top: 20px;">
+				<a href="#" class="navigation-item">My Work</a>
+				<a href="#" class="navigation-item">Resume</a>
+				<a href="#" class="navigation-item">About</a>
+			</div>
 
-	<!-- Navigation Menu for mobile screen sizes-->
-	<div class="subtitle navigation-menu dropdown" style="float: right; padding-right: 36px;">
-		<button id="nav-button" class="dropdown">Menu</button>
-		<div id="nav-dropdown" class="dropdown-content">
-			<a class="dropdown-item" href="#" style="padding: 20px 0 10px 20px;">My Work</a>
-			<a class="dropdown-item" href="#">Resume</a>
-			<a class="dropdown-item" href="#">About</a>
-			<a class="dropdown-item" href="#">Message me on LinkedIn</a>
-			<a class="dropdown-item" href="#" style="padding: 10px 0 20px 20px;">Send me an Email</a>
+			<!-- Navigation Menu for mobile screen sizes-->
+			<div class="subtitle navigation-menu dropdown" style="float: right; padding-right: 36px;">
+				<button id="nav-button" class="dropdown">Menu</button>
+				<div id="nav-dropdown" class="dropdown-content">
+					<a class="dropdown-item" href="#" style="padding: 20px 0 10px 20px;">My Work</a>
+					<a class="dropdown-item" href="#">Resume</a>
+					<a class="dropdown-item" href="#">About</a>
+					<a class="dropdown-item" href="#">Message me on LinkedIn</a>
+					<a class="dropdown-item" href="#" style="padding: 10px 0 20px 20px;">Send me an Email</a>
+				</div>
+			</div>
+			</div>
 		</div>
-	</div>
-	</div>
-</div>
-<div id="header" style="height: 20px; width: 100%; float: left;"></div>
+		<div id="header" style="height: 20px; width: 100%; float: left;"></div>
 
-<script type="text/javascript">  
-	var dropdown = document.getElementById("nav-dropdown");
-	var menuButton = document.getElementById("nav-button");
+		<script type="text/javascript">  
+			var dropdown = document.getElementById("nav-dropdown");
+			var menuButton = document.getElementById("nav-button");
 
-	function closest(e, t) { 
-	/* if(!e){ // if there is no event (where the event is a click)
-	return false;
-	}
-	else if(e === t) { // if event is t (where t is the dropdown)
-	return true;
-	}
-	else {
-	return closest(e.parentNode, t);
-	} */
+			function closest(e, t) { 
+			/* if(!e){ // if there is no event (where the event is a click)
+			return false;
+			}
+			else if(e === t) { // if event is t (where t is the dropdown)
+			return true;
+			}
+			else {
+			return closest(e.parentNode, t);
+			} */
 
-		return !e ? false : e === t ? true : closest(e.parentNode, t);
-	}
+				return !e ? false : e === t ? true : closest(e.parentNode, t);
+			}
 
-	menuButton.addEventListener("click", function(e) {
-		if (dropdown.style.display === "none") {
-			dropdown.style.display = "block";
-		} 
-		else {
-			dropdown.style.display = "none";
-		}
-	});
+			menuButton.addEventListener("click", function(e) {
+			/* dropdown.style.display = "block"; */
+				if (dropdown.style.display === "none") {
+					dropdown.style.display = "block";
+				} 
+				else {
+					dropdown.style.display = "none";
+				}
 
-	document.body.addEventListener("click", function(e) {
-		if (!closest(e.target, dropdown)) {
-			dropdown.style.display = "none";
-		}
-	});
+				/*e.stopPropagation();*/
+			});
+
+			document.body.addEventListener("click", function(e) {
+				if (!closest(e.target, dropdown)) {
+					dropdown.style.display = "none";
+				}
+			});
 </script>
+	<!--</body>-->
