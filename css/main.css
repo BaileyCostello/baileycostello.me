@@ -267,7 +267,6 @@ a {
 }
 
 .dropdown-content {
-	display: none;
   position: absolute;
   right: 8px;
   border-radius: 10px;
