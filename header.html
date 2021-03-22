@@ -34,39 +34,39 @@
 
 		<script type="text/javascript">  
 			var dropdown = document.getElementById("nav-dropdown");
-  var menuButton = document.getElementById("nav-button");
+			var menuButton = document.getElementById("nav-button");
 
-  function closest(e, t) { 
-   /* if(!e){ // if there is no event (where the event is a click)
-      return false;
-    }
-    else if(e === t) { // if event is t (where t is the dropdown)
-      return true;
-    }
-    else {
-      return closest(e.parentNode, t);
-    } */
+			/* fuction closest(e, t)
+			   where e is a target that has been interacted with in the event "click"
+			   t is the object that should be clicked 
+			*/
+			function closest(e, t) { 
+			if(!e){ // if there is no event (where the event is a click)
+				return false;
+			}
+			else if(e === t) { // if event is t (where t is the dropdown)
+				return true;
+			}
+			else {
+				return closest(e.parentNode, t);
+			}
 
-    return !e ? false : e === t ? true : closest(e.parentNode, t);
-  }
+				//return !e ? false : e === t ? true : closest(e.parentNode, t);
+			}
 
-    menuButton.addEventListener("click", function(e) {
-      if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-      } else {
-        dropdown.style.display = "none";
-      }
-      
-      e.stopPropagation();
-    });
+			menuButton.addEventListener("click", function(e) {
+				if (dropdown.style.display === "none") {
+					dropdown.style.display = "block";
+				} else {
+					dropdown.style.display = "none";
+				}
+				e.stopPropagation();
+			});
 
-    document.body.addEventListener("click", function(e) {
-        if (!closest(e.target, dropdown)) {
-            dropdown.style.display = "none";
-        }
-        else {
-        	dropdown.style.display = "block";
-        }
-    });
-</script>
+			document.body.addEventListener("click", function(e) {
+				if (!closest(e.target, menuButton)) {
+					dropdown.style.display = "none";
+				}
+			});
+			</script>
 	<!--</body>-->
