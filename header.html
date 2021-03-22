@@ -8,17 +8,15 @@
 			   Source: https://stackoverflow.com/questions/44595551/javascript-how-to-click-anywhere-on-page-to-hide-opened-div
 			*/
 			function closest(e, t) { 
-			if(!e) { // when "Menu" is not clicked, return false
-				return false;
-			}
-			else if(e === t) { // if event is t (where t is the dropdown)
-				return true;
-			}
-			else {
-				return closest(e.parentNode, t);
-			}
-
-				//return !e ? false : e === t ? true : closest(e.parentNode, t);
+				if(!e) { // when "Menu" is not clicked, return false
+					return false;
+				}
+				else if(e === t) { // if event is t (where t is the dropdown)
+					return true;
+				}
+				else {
+					return closest(e.parentNode, t);
+				}
 			}
 
 			menuButton.addEventListener("click", function(e) {
@@ -67,7 +65,6 @@
 				</div>
 			</div>
 			</div>
-		</div>
 		<div id="header" style="height: 20px; width: 100%; float: left;"></div>
 
 
