@@ -49,7 +49,7 @@
 
     return !e ? false : e === t ? true : closest(e.parentNode, t);
   }
-  
+
     menuButton.addEventListener("click", function(e) {
       if (dropdown.style.display === "none") {
         dropdown.style.display = "block";
@@ -63,6 +63,9 @@
     document.body.addEventListener("click", function(e) {
         if (!closest(e.target, dropdown)) {
             dropdown.style.display = "none";
+        }
+        else {
+        	dropdown.style.display = "block";
         }
     });
 </script>
