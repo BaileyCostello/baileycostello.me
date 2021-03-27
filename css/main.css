@@ -284,7 +284,7 @@ a {
 
 .dropdown-item {
 	padding: 10px 20px;
-	display: block;
+	/*display: block;*/
 }
 
 .dropdown:hover, .dropdown:focus {
