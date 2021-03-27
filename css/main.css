@@ -380,7 +380,7 @@ body {
   display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.tooltip, .tooltiptext {
   visibility: hidden;
   width: 140px;
   background-color: #555;
@@ -397,7 +397,7 @@ body {
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip, .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -408,7 +408,7 @@ body {
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover, .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
