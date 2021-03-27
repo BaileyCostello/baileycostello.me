@@ -284,8 +284,8 @@ a {
 	display: block;
 }
 
-.dropdown:hover, .dropdpwm:focus {
-  background-color: #2980B9;
+.dropdown:hover, .dropdown:focus {
+  background-color: rgba(0,0,0,0.2);
 }
 
 .dropdown a:hover {
