@@ -1,22 +1,25 @@
 <script type="text/javascript">  
 	/* When the user clicks on the button, 
-	toggle between hiding and showing the dropdown content */
+	toggle between hiding and showing the dropdown content 
+	source: */
 	function dropdownToggle() {
 	  document.getElementById("nav-dropdown").classList.toggle("show");
 	}
 
 	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropdown')) {
-	    var dropdowns = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdowns.length; i++) {
-	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains("show")) {
-	        openDropdown.classList.remove("show");
-	      }
-	    }
-	  }
+	function copyEmail() {
+		var copyText = document.getElementById("myInput");
+		copyText.select();
+		copyText.setSelectionRange(0, 99999)
+		document.execCommand("copy");
+
+		var tooltip = document.getElementById("myTooltip");
+  		tooltip.innerHTML = "Copied: " + copyText.value;
+	}
+
+	function outFunc() {
+		var tooltip = document.getElementById("myTooltip");
+		tooltip.innerHTML = "Copy to clipboard";
 	}
 </script>
 
@@ -28,12 +31,17 @@
 
 	<!-- Navigation Bar for desktop and tablet screen sizes-->
 	<div style="float: right;">
-		<a>
-			<img  class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
+		<a href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">
+			<img class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
 		</a>
-		<a>
+
+		<div class="tooltip">
+		<a onClick="copyEmail()" onmouseout="outFunc()">
+			<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
 			<img class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
 		</a>
+		</div>
+		<input type="text" value="bqacos@gmail.com" id="myInput" style="display: none;">	
 	</div>
 	<div style="float: right; padding-right: 20px; padding-top: 20px;">
 		<a href="#" class="navigation-item">My Work</a>
