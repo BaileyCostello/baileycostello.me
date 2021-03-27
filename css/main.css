@@ -375,13 +375,12 @@ body {
 
 /********** tooltip *************/
 
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-block;
 }
 
 .tooltiptext {
-  /*visibility: hidden;*/
   display: none;
   width: 120px;
   background-color: black;
@@ -389,15 +388,13 @@ body {
   text-align: center;
   border-radius: 10px;
   padding: 5px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
 }
 
 .tooltip:hover {
 	display: block;
-}
+} */
 
 /*.scrollbar {  JS - how many sections are on this page, what section is it currently scrolled to?
 	width: 6px;
