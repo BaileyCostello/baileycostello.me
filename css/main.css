@@ -80,12 +80,10 @@ a {
 	font-weight: 600;
 	font-size: 14pt;
 	text-decoration: none;
-	border-radius: 8px;
 }
 
 .button-ghost {
 	font-family: Montserrat;
-	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 14pt;
 	text-decoration: none;
@@ -249,8 +247,8 @@ a {
 /*navigation****************************************************/
 
 .navigation-item {
-	padding-right: 25px; 
-	padding-left: 25px;
+	padding-right: 10px; 
+	padding-left: 10px;
 }
 
 .dropdown {
@@ -333,14 +331,31 @@ body {
 .button {
 	color: #FFFFFF;
 	background-image: linear-gradient(to right, rgba(78, 128, 244, 1),
-rgba(255, 119, 144, 1));
+	rgba(255, 119, 144, 1));
 	border-radius: 56px;
 	padding: 8px 30px;
 	border: 0px;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
 
 .button:hover {
-	background-color: rgba(0,0,0,0.1);
+	background-image: linear-gradient(to right, rgba(255, 68, 102, 1), 
+	rgba(255, 214, 122, 1));
+}
+
+.button:active {
+	background-image: linear-gradient(to left,  rgba(123, 211, 255, 1), 
+	rgba(73, 97, 252, 1));
+	border-radius: 56px;
+	padding: 8px 30px;
+	border: 0px;
+	background-position: 0 100%;
+	outline: none;
+}
+
+.button:focus {
+	outline-color: rgba(78, 128, 244, .5);
+	outline-width: 1px;
 }
 
 .button-inverted:hover {
