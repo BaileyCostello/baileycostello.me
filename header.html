@@ -20,7 +20,14 @@ document.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 
-	menuButton.addEventListener("click", function(e) {
+	menuButton.onClick = function(e) {
+		if (dropdown.style.display === "none") {
+			dropdown.style.display = "block";
+		} else {
+			dropdown.style.display = "none";
+		}
+	}
+	/* menuButton.addEventListener("click", function(e) {
 		if (dropdown.style.display === "none") {
 			dropdown.style.display = "block";
 		} else {
@@ -28,13 +35,16 @@ document.addEventListener("DOMContentLoaded", function(){
 		}
 		e.stopPropagation();
 	});
+*/
+	
+});
 
 	document.body.addEventListener("click", function(e) {
-		if (!closest(e.target, dropdown)) {
-			dropdown.style.display = "none";
-		}
+			if (!closest(e.target, dropdown)) {
+				dropdown.style.display = "none";
+			}
 	});
-});
+
 </script>
 <div id="header" style="height: 20px; width: 100%; float: left;"></div>
 <div class="subtitle">
