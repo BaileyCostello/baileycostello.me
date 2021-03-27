@@ -284,15 +284,19 @@ a {
 	display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown:hover, .dropdpwm:focus {
+  background-color: #2980B9;
 }
 
-/*
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown a:hover {
+	background-color: #ddd;
 }
-*/
+
+.show {
+	display: block;
+}
+
+
 /*****************************************************************/
 
 .vertical-center {
