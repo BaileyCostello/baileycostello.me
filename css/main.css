@@ -77,7 +77,6 @@ a {
 
 .button {
 	font-family: Montserrat;
-	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 14pt;
 	text-decoration: none;
@@ -332,21 +331,12 @@ body {
 }
 
 .button {
-	color: #000000;
-	background-color: rgba(0,0,0,0);
-	border: 2px solid #000000;
-	padding: 4px 12px 4px 12px;
-}
-
-.button-inverted {
-	color: #FFFFFF; 
-	border: 2px solid #FFFFFF;
-}
-
-.button-ghost {
-	color: #000000;
-	background-color: rgba(0,0,0,0);
-	padding: 4px 12px 4px 12px;
+	color: #FFFFFF;
+	background-image: linear-gradient(to right, rgba(78, 128, 244, 1),
+rgba(255, 119, 144, 1));
+	border-radius: 56px;
+	padding: 8px 30px;
+	border: 0px;
 }
 
 .button:hover {
