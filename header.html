@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
 <script type="text/javascript">  
 	/* When the user clicks on the button, 
 	toggle between hiding and showing the dropdown content 
@@ -10,16 +11,9 @@
 	function copyEmail() {
 		var copyText = document.getElementById("myInput");
 		copyText.select();
-		copyText.setSelectionRange(0, 99999)
+		copyText.setSelectionRange(0, 99999);
 		document.execCommand("copy");
-
-		var tooltip = document.getElementById("myTooltip");
-  		tooltip.innerHTML = "Copied: " + copyText.value;
-	}
-
-	function outFunc() {
-		var tooltip = document.getElementById("myTooltip");
-		tooltip.innerHTML = "Copy to clipboard";
+		alert("Copied the text: " + copyText.value);
 	}
 </script>
 
@@ -35,15 +29,12 @@
 			<img class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
 		</a>
 
-		<div class="tooltip">
-		<a onClick="copyEmail()" onmouseout="outFunc()">
-			<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+		<a onClick="copyEmail()">
 			<img class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
 		</a>
-		</div>
-		<input type="text" value="bqacos@gmail.com" id="myInput" style="display: none;">	
 	</div>
-	<div style="float: right; padding-right: 20px; padding-top: 20px;">
+	<input type="text" value="bqacos@gmail.com" id="myInput" style="position: absolute; left: -1000px; top: -1000px;">
+	<div style="float: right; padding-right: 20px; padding-top: 20px ">
 		<a href="#" class="navigation-item">My Work</a>
 		<a href="#" class="navigation-item">Resume</a>
 		<a href="#" class="navigation-item">About</a>
