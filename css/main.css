@@ -240,7 +240,10 @@ a {
   	}
 
   	.navigation-menu {
-  		display: block;
+  		float: right; 
+  		padding-right: 36px;
+		position: relative;
+		display: inline-block;
   	}
 }
 

@@ -7,13 +7,13 @@
 
 	// Close the dropdown if the user clicks outside of it
 	window.onclick = function(event) {
-	  if (!event.target.matches('.nav-button')) {
+	  if (!event.target.matches('.dropdown')) {
 	    var dropdowns = document.getElementsByClassName("dropdown-content");
 	    var i;
 	    for (i = 0; i < dropdowns.length; i++) {
 	      var openDropdown = dropdowns[i];
-	      if (openDropdown.classList.contains('show')) {
-	        openDropdown.classList.remove('show');
+	      if (openDropdown.classList.contains('.show')) {
+	        openDropdown.classList.remove('.show');
 	      }
 	    }
 	  }
@@ -42,8 +42,8 @@
 	</div>
 
 	<!-- Navigation Menu for mobile screen sizes-->
-	<div class="navigation-menu" style="float: right; padding-right: 36px;">
-		<button onclick="dropdownToggle()" class="nav-button dropdown">Menu</button>
+	<div class="navigation-menu">
+		<button onclick="dropdownToggle()" class="dropdown">Menu</button>
 		<div id="nav-dropdown" class="dropdown-content">
 			<a class="dropdown-item" href="#" style="padding: 20px 0 10px 20px;">My Work</a>
 			<a class="dropdown-item" href="#">Resume</a>
