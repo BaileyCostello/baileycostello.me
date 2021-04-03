@@ -307,6 +307,10 @@ a {
 }
 
 
+/*.dropdown:hover .dropdown-content {
+	display: block;
+}*/
+
 /*****************************************************************/
 
 .vertical-center {
