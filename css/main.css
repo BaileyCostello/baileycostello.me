@@ -27,12 +27,18 @@
 	text-align: center;
 }
 
-.landing-page-text {
-	font-family: Montserrat;
+.landing-text {
 	font-weight: 500;
 	font-size: 16pt;
-	margin: 0;
-	padding-top: 0;
+}
+
+.tag {
+	background-color: rgba(0,0,0,0.1);
+	padding: 4px 10px;
+	margin: 3px;
+	border-radius: 30px;
+	line-height: 36px;
+	white-space: pre;
 }
 
 h1 {
@@ -59,21 +65,12 @@ h3 {
 	padding-top: 0;
 }
 
-p, span {
+p, span, li {
 	font-family: Montserrat;
 	font-weight: 400;
 	font-size: 12pt;
 	margin: 0;
 	padding-top: 0;
-}
-
-.tag {
-	background-color: rgba(0,0,0,0.1);
-	padding: 4px 10px;
-	margin: 3px;
-	border-radius: 30px;
-	line-height: 36px;
-	white-space: pre;
 }
 
 a {
