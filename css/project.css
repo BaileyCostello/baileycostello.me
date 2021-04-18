@@ -1,0 +1,435 @@
+/* font *****************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('/fonts/Montserrat-Regular.ttf');
+}
+
+h1 {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 12pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+h3 {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 12pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+p, span, li {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 12pt;
+	margin: 0;
+	padding-top: 0;
+}
+
+a {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 12pt;
+	text-decoration: none;
+	color: #000000;
+}
+
+.figure {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 12pt;
+	text-decoration: none;
+	text-align: center;
+	color: rgba(0,0,0,0.7);
+}
+
+.button {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.button-ghost {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+/* responsive breakpoints & positioning *************************************/
+
+/*https://www.w3schools.com/html/html_responsive.asp*/
+
+@media screen and (max-width: 100000px) {
+	* { /* cascades to screen sizes below */
+		box-sizing: border-box;
+	}
+
+	.row {
+		display: flex;
+	}
+
+	.row-section-break {
+		display: flex;
+		height: 40vh;
+	}
+
+	.one-column-content {
+		flex: 6;
+		/*border: solid;*/
+		padding: 1em;
+	}
+	.two-column-content {
+		flex: 4;
+		/*border: solid;*/
+		padding: 1em;
+	}
+
+	.column-margin {
+		flex: 1;
+		/*border: solid;*/
+		padding: 1em;
+	}
+
+	.center {
+		padding:8px;
+		float:left;
+		width:60%;
+		height: auto;
+	}
+
+	.center-column-one { /* place within div with class .center takes up 50% of 80%*/
+		padding:8px;
+		float:left;
+		width:50%;
+		height: auto;
+	}
+
+	.center-column-two {
+		padding:8px;
+		float:left;
+		width:50%;
+		height: auto;
+	}
+
+	.left, .right {
+		padding:8px;
+		float:left;
+		width:20%;
+		height: 100vh;
+	}
+
+	.landing-content {
+		height: 100vh;
+  	}
+
+  	.footer {
+  		height: 40vh;
+  	}
+
+  	.navigation-menu {
+  		display: none;
+  	}
+}
+
+@media screen and (max-width: 1600px) {
+	.center {
+		padding:8px;
+		float:left;
+		width:80%;
+		height: auto;
+	}
+
+	.center-column-one { /* place within div with class .center takes up 50% of 80%*/
+		padding:8px;
+		float:left;
+		width:50%;
+		height: auto;
+	}
+
+	.center-column-two {
+		padding:8px;
+		float:left;
+		width:50%;
+		height: auto;
+	}
+
+	.left, .right {
+		padding:8px;
+		float:left;
+		width:10%;
+		height: 100vh;
+	}
+
+	.landing-content {
+		height: 100vh;
+  	}
+
+  	.footer {
+  		height: 40vh;
+  	}
+}
+
+@media screen and (max-width: 1110px) {
+  	.dashboard-img {
+  		margin-top: 4%;
+  		-webkit-transform: translate(0, -4%);
+		-ms-transform: translate(0, -4%);
+		transform: translate(0, -4%);
+  	}
+}
+
+@media screen and (max-width: 990px) {
+  	.dashboard-img {
+  		margin-top: 12%;
+  		-webkit-transform: translate(0, -12%);
+		-ms-transform: translate(0, -12%);
+  		transform: translate(0, -12%);
+  	}
+ }
+
+ @media screen and (max-width: 860px) {
+  	.dashboard-img {
+  		margin-top: 20%;
+  		-webkit-transform: translate(0, -20%);
+		-ms-transform: translate(0, -20%);
+  		transform: translate(0, -20%);
+  	}
+}
+
+@media screen and (max-width: 750px) { /* The width is 100%, when the viewport is 750px or smaller */
+	.left, .center, .center-column-one, .center-column-two, .right {
+		width: 100%;
+	}
+
+	.center, .center-column-one, .center-column-two {
+		height: auto;
+	}
+
+	.left, .right { /* how do you make the .left and .right inherit the height of the .center? When the .center is larger than the viewport they do not line up */
+		height: 20vh;
+	}
+
+	.landing-content { /* this needs to be below width 100% */
+		height: 60vh;
+	}
+
+	.footer {
+		height: auto;
+	}
+
+	.dashboard-img {
+  		margin-top: 0%;
+   		-webkit-transform: translate(0, -0%);
+		-ms-transform: translate(0, -0%);
+  		transform: translate(0, -0%);
+  	}
+
+  	.navigation-item {
+  		display: none;
+  	}
+
+  	.navigation-menu {
+  		float: right; 
+  		padding-right: 8px;
+		position: relative;
+		display: inline-block;
+  	}
+}
+
+/*navigation****************************************************/
+
+.navigation-item {
+	padding-right: 10px; 
+	padding-left: 10px;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	padding: 14px 26px;
+	margin: 0;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14pt;
+	text-decoration: none;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 8px;
+  min-width: 210px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 56px;
+  text-align: left;
+  background-color: #FFFFFF;
+}
+
+.dropdown-item {
+	padding: 10px 20px;
+	display: block;
+}
+
+.dropdown:hover, .dropdown:focus {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.dropdown a:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.show {
+	display: block;
+}
+
+/*****************************************************************/
+
+.vertical-center {
+	position: relative;
+	top: 50%; /*50% of the container's height*/
+	-webkit-transform: translate(0, -50%); /*-50% of the height of the object*/
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.horizontal-center {
+	/* position: relative; */
+	left: 50%; /*50% of the container's width*/
+	-webkit-transform: translate(-50%, 0); /*-50% of the width of the object*/
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.spacer {
+	background-color: #FFFFFF;
+	 height: 10vh; 
+	 width: 100%;
+}
+
+/*************************************************************/
+
+body {
+	margin: 0;
+}
+
+.button {
+	color: #FFFFFF;
+	background-image: linear-gradient(to right, rgba(78, 128, 244, 1),
+	rgba(255, 119, 144, 1));
+	border-radius: 56px;
+	padding: 8px 30px;
+	border: 0px;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+	background-image: linear-gradient(to right, rgba(255, 68, 102, 1), 
+	rgba(255, 214, 122, 1));
+}
+
+.button:focus {
+	outline-color: rgba(78, 128, 244, .5);
+	outline-width: 1px;
+}
+
+.button-inverted:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.link {
+	color: #000000; 
+	text-decoration: underline;
+}
+
+.link-inverted {
+	color: #FFFFFF; 
+	text-decoration: underline;
+}
+
+.img {
+	width: 100%; 
+	border: 1px solid #D8D8D8; 
+	border-radius: 8px;
+}
+
+.footer {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+/********** tooltip *************/
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  display: none;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover {
+	display: block;
+} */
+
+/*.scrollbar {  JS - how many sections are on this page, what section is it currently scrolled to?
+	width: 6px;
+	height: 50vh;
+	background-color: #000000;
+	border-radius: 50px;
+	left: 99%;
+	top: 25%;
+	position: fixed;
+}
+*/
+
+/* CSS animations https://www.w3schools.com/css/css3_animations.asp */
+
+@keyframes down-arrow {
+	0%		{top: 0px;}
+	20%		{top: 0px;}
+	25%		{top: 4px;}
+	30%		{top: 2px;}
+	35%		{top: 4px;}
+	40%		{top: 0px;}
+	100%	{top: 0px;}
+}
+
+.down-arrow {
+	padding: 8px;
+	position: relative;
+	animation-name: down-arrow;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-iteration-count: 4;
+	animation-timing-function: linear;
+}
