@@ -2,14 +2,13 @@
 <script type="text/javascript">
 
 	var docTitle = document.title;
-	console.log(docTitle);
 	
-	if(docTitle === "Bailey Costello") {
-	  document.getElementById('linkedIn').src='assets/LinkedIn-Icon-Small.png';
+	if(docTitle !== "Bailey Costello") {
+		document.getElementById('BaileyCostelloLogo').src='../assets/LinkedIn-Icon-Small.png';
+		document.getElementById('linkedInIcon').src='../assets/LinkedIn-Icon-Small.png';
+		document.getElementById('emailIcon').src='../assets/LinkedIn-Icon-Small.png';
 	}
-	else {
-	  document.getElementById('linkedIn').src='../assets/LinkedIn-Icon-Small.png';
-	}  
+
 	/* When the user clicks on the button, 
 	toggle between hiding and showing the dropdown content 
 	source: */
@@ -42,17 +41,17 @@
 <div id="header" style="height: 20px; width: 100%; float: left;"></div>
 <div class="subtitle">
 	<a href="/" style="float: left; padding-left: 36px;">
-		<img id="linkedIn" src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;">
+		<img id="BaileyCostelloLogo" src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;">
 	</a>
 
 	<!-- Navigation Bar for desktop and tablet screen sizes-->
 	<div style="float: right;">
 		<a href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">
-			<img class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
+			<img id="linkedInIcon" class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
 		</a>
 
 		<a onClick="copyEmail()">
-			<img class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
+			<img id="emailIcon" class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
 		</a>
 	</div>
 	<input type="text" value="bqacos@gmail.com" id="myInput" style="position: absolute; left: -1000px; top: -1000px;">
