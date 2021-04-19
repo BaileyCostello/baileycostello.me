@@ -4,9 +4,12 @@
 	var docTitle = document.title;
 	
 	if(docTitle !== "Bailey Costello") {
-		document.getElementById('BaileyCostelloLogo').src='../assets/LinkedIn-Icon-Small.png';
+		document.getElementById('BaileyCostelloLogo').src='../assets/Bailey-Costello-Logo.png';
 		document.getElementById('linkedInIcon').src='../assets/LinkedIn-Icon-Small.png';
-		document.getElementById('emailIcon').src='../assets/LinkedIn-Icon-Small.png';
+		document.getElementById('emailIcon').src='../assets/Email-Icon-Small.png';
+		/* document.getElementById('myWork').href='../index.html';
+		document.getElementById('resume').href='../Resume.html';
+		document.getElementById('about').href='../About.html'; */
 	}
 
 	/* When the user clicks on the button, 
@@ -56,9 +59,9 @@
 	</div>
 	<input type="text" value="bqacos@gmail.com" id="myInput" style="position: absolute; left: -1000px; top: -1000px;">
 	<div style="float: right; padding-right: 20px; padding-top: 20px ">
-		<a href="#" class="navigation-item">My Work</a>
-		<a href="#" class="navigation-item">Resume</a>
-		<a href="#" class="navigation-item">About</a>
+		<a id="myWork" href="#" class="navigation-item">My Work</a>
+		<a id="resume" href="#" class="navigation-item">Resume</a>
+		<a id="about" href="#" class="navigation-item">About</a>
 	</div>
 
 	<!-- Navigation Menu for mobile screen sizes-->
