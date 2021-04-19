@@ -46,6 +46,14 @@ a {
 	color: #000000;
 }
 
+.noteable {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14pt;
+	margin: 0;
+	padding-top: 0;
+}
+
 .figure {
 	font-family: Montserrat;
 	font-weight: 400;

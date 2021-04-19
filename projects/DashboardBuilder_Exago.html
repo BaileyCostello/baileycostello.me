@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="gtf-8">
 		<link rel="stylesheet" type="text/css" href="../css/project.css" media="screen"/>
 		<script src="../js/main.js"></script>
 		<title>Dashboard Builder</title>
 	</head>
+
+	<!-- Load in Javascript and JQuery -->
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$("#header").load("header.html");
+		});
+	</script>
 	
 	<body>
 		<div id="header"></div>
@@ -20,7 +29,7 @@
 					<h3>Exago BI</h3>
 					<br/>
 					<br/>
-					<p>When you think of business intelligence (BI) and data analytics the first thing that likely comes to mind is a beautiful Dashboard. What isn’t thought of is the knowledge and work required to create this effortless looking display of key metrics and charts.</p> <h1>Exago’s Dashboard creation experience is outdated, confusing, and frustrating to use; overall a weak point for Exago in the competitive data analytics market.</h1>
+					<p>When you think of business intelligence (BI) and data analytics the first thing that likely comes to mind is a beautiful Dashboard. What isn’t thought of is the knowledge and work required to create this effortless looking display of key metrics and charts. <span class="noteable">Exago’s Dashboard creation experience is outdated, confusing, and frustrating to use; overall a weak point for Exago in the competitive data analytics market.</span></p>
 					<br/>
 					<br/>
 					<h2>Key Learnings</h2>
@@ -64,6 +73,7 @@
 			<div class="column-margin"></div>
 			<div class="one-column-content">
 				<h2>Project Milestones</h2>
+				<br/>
 				<p>Organized in cronological order and broken up by the Double Diamond Design Process: Discovery, Definition, Development, and Delivery.</p>
 				<br/>
 				<br/>
@@ -86,15 +96,15 @@
 			</div>
 			<div class="column-margin"></div>
 		</div>
-		<!------------------------------------------------------------------------------->
-		<div class="row-section-break"></div>
 
 		<div class="row">
+		<!------------------------------------------------------------------------------->
+		<div class="row-section-break"></div>
 			<div class="column-margin"></div>
 			<div class="one-column-content">
 				<h2>Workflow for Creating Charts</h2>
 				<br/>
-				<p>The old system for building charts would make decisions for the user with intentions of being convenient, but this feature" ended up being unpredictable and confusing. <span>We removed the magic and cut the number of steps in half</span>
+				<p>The old system for building charts would make decisions for the user with intentions of being convenient, but this feature" ended up being unpredictable and confusing. <span class="noteable">We removed the magic and cut the number of steps in half.</span>
 				<br/>
 				<br/>
 				Learnings
@@ -161,7 +171,7 @@
 				<h2>Information Architecture</h2>
 				<br/>
 				<p>
-					<span>The old information architecture caused extreme frustration, a heavy cognitive load, and slowed users down dramatically.</span>Test after test, I watched people get lost in the interface. Almost everyone gave up trying to learn the information architecture and instead would click every section until they stumbled upon whatever they were looking for.
+					<span class="noteable">The old information architecture caused extreme frustration, a heavy cognitive load, and slowed users down dramatically.</span>Test after test, I watched people get lost in the interface. Almost everyone gave up trying to learn the information architecture and instead would click every section until they stumbled upon whatever they were looking for.
 					<br/>
 					The new layout was grouped more intutively, labeled clearly, and consistent with Exago's other products.
 				</p>
@@ -192,7 +202,7 @@
 			<div class="one-column-content">
 				<h2>Exago's First Usability Testing Session</h2>
 				<br/>
-				<p>Seeing is believing. With no allotted time for UX research, I made time for moderated usability testing. <span>I chose this method because in addition to testing the proposed solution, I was able to gather task completion metrics and ask specific questions.</span>
+				<p>Seeing is believing. With no allotted time for UX research, I made time for moderated usability testing. <span class="noteable">I chose this method because in addition to testing the proposed solution, I was able to gather task completion metrics and ask specific questions.</span>
 				<br/>
 				<br/>
 				Learnings
@@ -214,7 +224,7 @@
 			<div class="one-column-content">
 				<h2>Visual Design</h2>
 				<br/>
-				<p>Customer's embed the software into their products, so the style needs to feel <span>neutral</span> and blend in. Seccondly, the interface needs to be as simple and <span>minimal</span> as possible because the powerful solution can be easily overwhelming. Finally, I made a point to design <span>accessible</span> elements like labels, bigger text, and contrasting colors that pass WCAG standards.
+				<p>Customer's embed the software into their products, so the style needs to feel <span class="noteable">neutral</span> and blend in. Seccondly, the interface needs to be as simple and <span class="noteable">minimal</span> as possible because the powerful solution can be easily overwhelming. Finally, I made a point to design <span class="noteable">accessible</span> elements like labels, bigger text, and contrasting colors that pass WCAG standards.
 				<br/>
 				<br/>
 				Learnings
