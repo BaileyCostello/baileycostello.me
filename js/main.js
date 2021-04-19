@@ -1,25 +1,13 @@
 /*javascript*/
+var docTitle = document.title;
 
-function svgasimg() { /*https://css-tricks.com/a-complete-guide-to-svg-fallbacks/*/
-  return document.implementation.hasFeature(
-    "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
+if(docTitle === "Bailey Costello") {
+  $("#linkedIn").src("assets/LinkedIn-Icon-Small.png");
+}
+else {
+  $("#linkedIn").src("../assets/LinkedIn-Icon-Small.png");
 }
 
-if (!svgasimg()){
-  var e = document.getElementsByTagName("img");
-  if (!e.length){
-    e = document.getElementsByTagName("IMG");
-  }
-  for (var i=0, n=e.length; i<n; i++){
-    var img = e[i],
-        src = img.getAttribute("src");
-    if (src.match(/svgz?$/)) {
-      /* URL ends in svg or svgz */
-      img.setAttribute("src", 
-             img.getAttribute("data-fallback"));
-    }
-  }    
-}
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
