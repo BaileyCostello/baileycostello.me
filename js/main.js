@@ -1,14 +1,4 @@
 /*javascript*/
-var docTitle = document.title;
-
-if(docTitle === "Bailey Costello") {
-  document.getElementById('linkedIn').src='assets/LinkedIn-Icon-Small.png';
-}
-else {
-  document.getElementById('linkedIn').src='../assets/LinkedIn-Icon-Small.png';
-}
-
-
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */

@@ -1,5 +1,15 @@
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
-<script type="text/javascript">  
+<script type="text/javascript">
+
+	var docTitle = document.title;
+	console.log(docTitle);
+	
+	if(docTitle === "Bailey Costello") {
+	  document.getElementById('linkedIn').src='assets/LinkedIn-Icon-Small.png';
+	}
+	else {
+	  document.getElementById('linkedIn').src='../assets/LinkedIn-Icon-Small.png';
+	}  
 	/* When the user clicks on the button, 
 	toggle between hiding and showing the dropdown content 
 	source: */
