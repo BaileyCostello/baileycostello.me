@@ -2,10 +2,10 @@
 var docTitle = document.title;
 
 if(docTitle === "Bailey Costello") {
-  $("#linkedIn").src("assets/LinkedIn-Icon-Small.png");
+  document.getElementById('linkedIn').src='assets/LinkedIn-Icon-Small.png';
 }
 else {
-  $("#linkedIn").src("../assets/LinkedIn-Icon-Small.png");
+  document.getElementById('linkedIn').src='../assets/LinkedIn-Icon-Small.png';
 }
 
 
