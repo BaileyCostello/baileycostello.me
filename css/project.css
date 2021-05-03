@@ -151,6 +151,36 @@ a {
   	.navigation-menu {
   		display: none;
   	}
+
+  	/***New Filter Menu - Questions Answered****/
+  	/***https://www.w3schools.com/howto/howto_css_image_text.asp***/
+
+  	.img-container {
+  		position: relative;
+		text-align: left;
+  	}
+
+  	.filter-question-one {
+  		position: absolute;
+		top: 32%;
+		left: 6%;
+  	}
+
+  	.filter-question-two {
+  		position: absolute;
+		top: 45%;
+		left: 6%;
+  	}
+
+  	.filter-question-three {
+  		position: absolute;
+		top: 82%;
+		left: 6%;
+  	}
+
+  	.filter-img {
+  		width: 100%;
+  	}
 }
 
 @media screen and (max-width: 1600px) {
