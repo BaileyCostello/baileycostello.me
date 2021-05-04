@@ -152,35 +152,69 @@ a {
   		display: none;
   	}
 
-  	/***New Filter Menu - Questions Answered****/
-  	/***https://www.w3schools.com/howto/howto_css_image_text.asp***/
 
+  	/*** IMAGE CONTAINER ***/
+  	/***https://www.w3schools.com/howto/howto_css_image_text.asp***/
   	.img-container {
   		position: relative;
-		text-align: left;
   	}
 
-  	.filter-question-one {
-  		position: absolute;
-		top: 32%;
-		left: 6%;
-  	}
-
-  	.filter-question-two {
-  		position: absolute;
-		top: 45%;
-		left: 6%;
-  	}
-
-  	.filter-question-three {
-  		position: absolute;
-		top: 82%;
-		left: 6%;
-  	}
-
+  	/*** IMAGE ***/
   	.filter-img {
   		width: 100%;
   	}
+
+  	/*** TEXT ***/
+  	/***New Filter Menu - Questions Answered****/
+	.filter-question-one {
+		text-align: left;
+		position: absolute;
+		top: 32%;
+		left: 6%;
+	}
+
+	.filter-question-two {
+		text-align: left;
+		position: absolute;
+		top: 45%;
+		left: 6%;
+	}
+
+	.filter-question-three {
+		text-align: left;
+		position: absolute;
+		top: 82%;
+		left: 6%;
+	}
+
+  	/***Business Goals and User Needs Venn Diagram***/
+	.venn-header {
+		padding-left: 24%;
+	}
+
+	.business-goals {
+		text-align: center;
+		position: absolute;
+		top: 10%;
+		left: 8%;
+		width: 30%;
+	}
+
+	.intersection {
+		text-align: center;
+		position: absolute;
+		top: 24%;
+		left: 42%;
+		width: 14.5%;
+	}
+
+	.user-needs {
+		text-align: center;
+		position: absolute;
+		top: 12%;
+		left: 62.5%;
+		width: 31%;
+	}
 }
 
 @media screen and (max-width: 1600px) {
