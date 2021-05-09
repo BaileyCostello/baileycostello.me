@@ -78,7 +78,7 @@ a {
 }
 
 .VennIcon {
-	width: 64px;
+	width: 48px;
 }
 
 /* responsive breakpoints & positioning *************************************/
@@ -111,7 +111,7 @@ a {
 	}
 
 	.column-margin {
-		flex: 1;
+		flex: 2;
 		/*border: solid;*/
 		padding: 1em;
 	}
