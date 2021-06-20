@@ -141,6 +141,32 @@ a {
   		width: 578px;
   	}
 
+  	.annotated-img-container-vert {
+  		display:  inline-block;
+  		padding:  1em;
+  		max-width: 272px;
+  		vertical-align: top;
+  	}
+
+  	 .annotated-img-container-horiz {
+  		display:  inline-block;
+  		padding:  1em;
+  		max-width: 480px;
+  		vertical-align: top;
+  	}
+
+  	.about-img-vert {
+  		border-radius: 10px; 
+  		max-height: 308.8px; 
+  		max-width: 232px;
+  	}
+
+  	.about-img-horiz {
+  		border-radius: 10px; 
+  		max-height: 308.8px; 
+  		max-width: 480px;
+  	}
+
 	.filter-question-one {
 		text-align: left;
 		position: absolute;
@@ -170,6 +196,7 @@ a {
   	.IA-graphic {
   		width: 90%;
   	}
+
 }
 
 @media screen and (max-width: 990px) {
@@ -284,6 +311,32 @@ a {
 
 	.fit-the-filter {
 		display: none;
+	}
+
+  .annotated-img-container-vert {
+		display:  inline-block;
+		padding:  1em;
+		max-width: 272px;
+		vertical-align: top;
+	}
+
+	.annotated-img-container-horiz {
+		display:  inline-block;
+		padding:  1em;
+		max-width: 278px;
+		vertical-align: top;
+	}
+
+	.about-img-vert {
+		border-radius: 10px; 
+		max-height: 308.8px; 
+		max-width: 232px;
+	}
+
+	.about-img-horiz {
+		border-radius: 10px; 
+		max-height: 308.8px; 
+		max-width: 278px;
 	}
 }
 
