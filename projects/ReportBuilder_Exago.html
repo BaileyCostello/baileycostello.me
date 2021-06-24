@@ -3,6 +3,19 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="gtf-8">
 		<link rel="stylesheet" type="text/css" href="../css/project.css" media="screen"/>
+
+		<!-- Hotjar Tracking Code for baileycostello.me -->
+		<script>
+		    (function(h,o,t,j,a,r){
+		        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		        h._hjSettings={hjid:2470107,hjsv:6};
+		        a=o.getElementsByTagName('head')[0];
+		        r=o.createElement('script');r.async=1;
+		        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		        a.appendChild(r);
+		    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+
 		<title>Report Builder</title>
 	</head>
 
@@ -31,7 +44,7 @@
 						A report is a document containing information intended for a specific audience and purpose. They can look as simple as a list of emails or as nuanced as an analysis on business operations; displaying complex calculations, charts, and links to other reports.
 						<br/>
 						<br/>
-						Manually creating a report is multiple days worth of work; someone has to query data from a database then clean, run calculations, and present the data in a meaningful way. Exago’s Report Building Platform streamlines this process by making data easily accessible and empowers people with the tools they need to turn data into actionable insights.
+						Manually creating a report is multiple days' worth of work; someone has to query data from a database then clean, run calculations, and present the data in a meaningful way. Exago’s Report Building Platform streamlines this process by making data easily accessible and empowers people with the tools they need to turn data into actionable insights.
 					</p>
 					<br/>
 					<br/>
@@ -46,7 +59,9 @@
 					<h2>Tools</h2>
 					<br/>
 					<div class="row">
-						<div><img src="../assets/SketchLogoImg.png"></div>
+						<div style="width: 26px">
+							<img src="../assets/FigmaLogoImg.png" style="width: 100%;">
+						</div>
 						<div style="margin-left: 8px;"><p>Figma<br/>UI Design and Sharing Mockups</p></div>
 						<br/>
 					</div>
@@ -105,11 +120,13 @@
 					<li>Integrating Exago into their system takes a long time</li>
 				</ul>
 				<br/>
-				<p>
-					Buyer's Journey
+				<!-- <p>
 					<br/>
-					I also worked with sales to get a clear picture of the buyer’s journey to empathize with the experience and understand the root product problems.
-				</p>
+					I worked with sales to map out the buyer's journey to highlight when difficulties arose and perspective on what happened before and after these points of friction.
+					<br/>
+					<br/>
+					<img src="../assets/BuyersJourney.png" style="width: 100%;">
+				</p> -->
 				<br/>
 				<br/>
 				<p>
@@ -140,32 +157,63 @@
 		<div class="row">
 			<div class="column-margin"></div>
 			<div class="one-column-content">
-				<h2>Look and Feel Goals</h2>
+				<h2>User Interface Design</h2>
 				<br/>
 				<p>
-					<span class="noteable">Modern and Professional</span>
+					<span class="noteable">Modern and Professional Look and Feel</span>
 					<br/>
-					not over-designed.
 					<br/>
-					The Aesthetic Usability Effect states that users often perceive aesthetically more pleasing designs as more usable.
+					The Aesthetic Usability Effect states that users often perceive more aesthetically pleasing design as more usable.
 				</p>
-				<p>
-					<span class="noteable">Obvious Options</span>
-					<br/>
-					guide the end-user by creating signifiers for previously hidden, important actions.
-				</p>
+				<br/>
+				<img src="../assets/OldARGrid.png" style="width: 100%;" alt="The old report builder interface.">
+				<br/>
+				<p class="figure">The outdated report builder interface.</p>
+				<br/>
+				<br/>
+				<br/>
+				<img src="../assets/NewARGrid.png" style="width: 100%;" alt="The updated report builder interface.">
+				<br/>
+				<p class="figure">I improved the look and feel as well as created signifiers for previously hidden, important actions.</p>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
 				<p>
 					<span class="noteable">Fast and Familiar Interaction Design</span>
+				</p>
+				<br/>
+				<img src="../assets/ARGridInteraction.gif" style="width: 100%;" alt="Grid interactions that match popular applications with grid interfaces.">
+				<br/>
+				<p class="figure">
+					We updated the interactions to match Microsoft Excel and Google Sheets, optimal for working fast.
 					<br/>
-					Update the grid interactions to use those most common with Microsoft Excel and Google Sheets, optimal for working fast.
 					<br/>
 					Jakob's Law states that users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.
 				</p>
+				<br/>
+				<br/>
+				<br/>
+				<img src="../assets/ARDragInteraction.gif" style="width: 100%;" alt="Additional grid interactions that are unique to Exago's application.">
+				<br/>
+				<p class="figure">
+					Additionally, I designed a visual indicator communicating that users can move cells from one area to another and add any missing columns or rows.
+				</p>
+				<br/>
+				<br/>
+				<br/>
 				<p>
 					<span class="noteable">Clean and Responsive Report Viewing</span>
 					<br/>
 					The highest-trafficked page needs to be simple, easy to use, and flexible for all users.
 				</p>
+				<br/>
+				<br/>
+				<!-- This should be a gif 
+				<img src="../assets/ReportViewerLarge.png" style="width: 100%;">
+				<br/>
+				<br/>
+				<img src="../assets/ReportViewerSmall.png" style="width: 25%;"> -->
 			</div>
 			<div class="column-margin"></div>
 		</div>
@@ -182,17 +230,32 @@
 					<br/>
 					<span class="noteable">For all newly created reports, users skipped optional steps in the wizard 95% of the time. Additionally, closing the wizard transported users to a new page that left them wondering “Where do I start?”</span>
 					<br/>
-					During demos, even the sales team would gloss over the wizard as quickly as possible. We stripped the five step wizard down to a single dialog sitting on top of the design interface. This created a fast and simple experience that oriented users and helped them anticipate the next screen.
+					During demos, even the sales team would gloss over the wizard as quickly as possible. We stripped the five-step wizard down to a single dialog sitting on top of the design interface. This created a fast and simple experience that oriented users and helped them anticipate the next screen.
 				</p>
+				<br/>
+				<img src="../assets/ARWizard.png" style="width: 100%;">
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<img src="../assets/ARDialog.png" style="width: 100%;">
+				<br/>
+				<br/>
+				<br/>
+				<br/>
 				<p>
-					<span class="noteable">New and experienced users alike would run into an annoying error over and over, clearly indicating a “desire path.”</span>
+					<span class="noteable">New and experienced users alike would run into an annoying error over and over, indicating a “desire path.”</span>
 					<br/>
 					A Desire Path is the most intuitive, fastest, or most common path for a user to get from A to B, despite it not being designed that way. Because of a technical limitation, we were not able to fully eliminate the step causing people to get into the error state, but we were able to integrate it into the workflow and prevent the error.
 				</p>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
 				<p>
 					<span class="noteable">The most important options for building reports were hidden amongst many other, less important icons.</span>
 					<br/>
-					The information architecture (IA) clearly needed updating. Sensitive to those with years of muscle memory from the old information architecture and no alloted time for research, I had to get creative and find some way to test such a big change to the interface. I knew my chance came when I was offered the opportunity to present at Exago’s client advisory board meeting. Using PowerPoint and Zoom Polling, I created a first click test and recieved 40+ responses in less than two hours. After the meeting, I anaylsed and shared the results by building a report using the same report builder this case study is describing.
+					The information architecture (IA) clearly needed updating. Sensitive to those with years of muscle memory from the old information architecture and no allocated time for research, I had to get creative and find some way to test such a big change to the interface. I knew my chance came when I was offered the opportunity to present at Exago’s client advisory board meeting. Using PowerPoint and Zoom Polling, I created a first click test and received 40+ responses in less than two hours. After the meeting, I anaylzed and shared the results by building a report using the same report builder this case study is describing.
 					<br/>
 					I used the feedback from that session to redesign the information architecture in a way that prioritizes essential options.
 				</p>
