@@ -98,6 +98,11 @@ a {
 		height: 40vh;
 	}
 
+	.row-section-break-bottom-page {
+		display: flex;
+		height: 16vh;
+	}
+
 	.one-column-content {
 		flex: 6;
 		padding: 1em;
