@@ -479,6 +479,12 @@ body {
 	border-radius: 8px;
 }
 
+.img-work {
+	max-width:  90%;
+	border: 1px solid #D8D8D8; 
+	border-radius: 8px;
+}
+
 .footer {
 	color: #FFFFFF;
 	background-color: #000000;
