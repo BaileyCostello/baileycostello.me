@@ -329,7 +329,7 @@ a {
 
 .vertical-center {
 	position: relative;
-	top: 50%; /*50% of the container's height*/
+	/* top: 50%; 50% of the container's height*/
 	-webkit-transform: translate(0, -50%); /*-50% of the height of the object*/
 	-ms-transform: translate(0, -50%);
 	transform: translate(0, -50%);
