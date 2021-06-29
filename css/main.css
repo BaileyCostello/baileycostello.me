@@ -129,11 +129,11 @@ a {
 		padding:8px;
 		float:left;
 		width:20%;
-		height: 100vh;
+		height: 70vh;
 	}
 
 	.landing-content {
-		height: 100vh;
+		height: 70vh;
   	}
 
   	.footer {
@@ -175,11 +175,11 @@ a {
 		padding:8px;
 		float:left;
 		width:10%;
-		height: 100vh;
+		height: 50vh;
 	}
 
 	.landing-content {
-		height: 100vh;
+		height: 50vh;
   	}
 
   	.footer {
@@ -236,10 +236,10 @@ a {
 	}
 
 	.dashboard-img {
-  		margin-top: 0%;
-   		-webkit-transform: translate(0, -0%);
+		margin-top: 0%;
+		-webkit-transform: translate(0, -0%);
 		-ms-transform: translate(0, -0%);
-  		transform: translate(0, -0%);
+		transform: translate(0, -0%);
   	}
 
   	.navigation-item {
