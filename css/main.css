@@ -143,6 +143,10 @@ a {
   	.navigation-menu {
   		display: none;
   	}
+
+  	.button-home {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -245,9 +249,15 @@ a {
   	.navigation-menu {
   		float: right; 
   		padding-right: 8px;
-		position: relative;
-		display: inline-block;
+			position: relative;
+			display: inline-block;
   	}
+}
+
+@media screen and (max-width: 501px) {
+	.button-home {
+		display: inline;
+	}
 }
 
 /*navigation****************************************************/
