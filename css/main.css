@@ -147,6 +147,10 @@ a {
   	.button-home {
 		display: none;
 	}
+
+	.landing-page-text {
+		top:  60%;
+	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -244,18 +248,22 @@ a {
 		-webkit-transform: translate(0, -0%);
 		-ms-transform: translate(0, -0%);
 		transform: translate(0, -0%);
-  	}
+  }
 
-  	.navigation-item {
-  		display: none;
-  	}
+	.navigation-item {
+		display: none;
+	}
 
-  	.navigation-menu {
-  		float: right; 
-  		padding-right: 8px;
-			position: relative;
-			display: inline-block;
-  	}
+	.navigation-menu {
+		float: right; 
+		padding-right: 8px;
+		position: relative;
+		display: inline-block;
+	}
+
+	.landing-page-text {
+	top:  30%;
+	}
 }
 
 @media screen and (max-width: 501px) {
