@@ -223,8 +223,12 @@ a {
 		height: auto;
 	}
 
-	.left, .right { /* how do you make the .left and .right inherit the height of the .center? When the .center is larger than the viewport they do not line up */
+	.left { /* how do you make the .left and .right inherit the height of the .center? When the .center is larger than the viewport they do not line up */
 		height: 20vh;
+	}
+
+	.right {
+		display:  none;
 	}
 
 	.landing-content { /* this needs to be below width 100% */
