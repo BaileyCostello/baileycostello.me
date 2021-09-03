@@ -271,6 +271,10 @@ a {
 }
 
 @media screen and (max-width: 501px) {
+	.landing-page-text {
+	top:  20%;
+	}
+	
 	.button-home {
 		display: inline;
 	}
