@@ -266,15 +266,15 @@ a {
 	}
 
 	.landing-page-text {
-	top:  20%;
+		top: 20%;
 	}
 }
 
 @media screen and (max-width: 501px) {
-	.landing-page-text {
-	top:  20%;
-	}
-	
+	/*.landing-page-text {
+		top: 20%;
+	} */
+
 	.button-home {
 		display: inline;
 	}
