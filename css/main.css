@@ -110,7 +110,7 @@ a {
 		flex: 6;
 		padding: 1em;
 	}
-	
+
 	.two-column-content {
 		flex: 3;
 		padding: 1em;
@@ -272,6 +272,20 @@ a {
 
 /*************************************************************/
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 12px;
+   background-color: #000000;
+   color: rgba(255, 255, 255, .5);
+   text-align: right;
+   font-size: 11pt;
+}
+
+/*************************************************************/
+
 body {
 	margin: 0;
 }
@@ -314,11 +328,6 @@ body {
 	width: 100%; 
 	border: 1px solid #D8D8D8; 
 	border-radius: 8px;
-}
-
-.footer {
-	color: #FFFFFF;
-	background-color: #000000;
 }
 
 /********** tooltip *************/
