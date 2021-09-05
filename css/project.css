@@ -93,6 +93,15 @@ a {
 		box-sizing: border-box;
 	}
 
+	.large-screen-only { /* must appear before .row */
+		display: flex;
+	}
+
+	.small-screen-only {
+		display: none;
+	}
+
+
 	.row {
 		display: flex;
 	}
@@ -119,14 +128,6 @@ a {
 	.column-margin {
 		flex: 2;
 		padding: 1em;
-	}
-
-	.large-screen-only {
-		display: flex;
-	}
-
-	.small-screen-only {
-		display: none;
 	}
 
 	.navigation-menu {
