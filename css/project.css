@@ -94,11 +94,11 @@ a {
 	}
 
 	.large-screen-only { /* must appear before .row */
-		display: flex;
+		display: flex !important;
 	}
 
 	.small-screen-only {
-		display: none;
+		display: none !important;
 	}
 
 
@@ -222,11 +222,11 @@ a {
 	}
 
 	.large-screen-only {
-		display: none;
+		display: none !important;
 	}
 
 	.small-screen-only {
-		display: flex;
+		display: flex !important;
 	}
  }
 
