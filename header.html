@@ -36,44 +36,44 @@
 		alert("Email address copied to clipboard: " + copyText.value);
 	}
 </script>
-
-<div id="header" style="height: 20px; width: 100%; float: left;"></div>
-<div class="subtitle">
-	<a href="/" style="float: left; padding-left: 36px;">
-		<img id="BaileyCostelloLogo" src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;">
-	</a>
-
-	<!-- Navigation Bar for desktop and tablet screen sizes-->
-	<div style="float: right;">
-		<a href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">
-			<img id="linkedInIcon" class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
+<div style="position: fixed; top: 0; width: 100%;">
+	<div id="header" style="height: 20px; width: 100%; float: left;"></div>
+	<div class="subtitle">
+		<a href="/" style="float: left; padding-left: 36px;">
+			<img id="BaileyCostelloLogo" src="assets/Bailey-Costello-Logo.png" alt="Bailey Costello" style="width: 86px; height: 50px;">
 		</a>
 
-		<a onClick="copyEmail()">
-			<img id="emailIcon" class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
-		</a>
-	</div>
-	<input type="text" value="bqacos@gmail.com" id="myInput" style="position: absolute; left: -1000px; top: -1000px;">
-	<div style="float: right; padding-right: 20px; padding-top: 20px ">
-		<a id="home" href="index.html" class="navigation-item">Home</a>
-		<a id="myWork" href="work.html" class="navigation-item">My Work</a>
-		<a id="resume" href="assets/BaileyCostelloResume.pdf" target="_blank" class="navigation-item">Resume</a>
-		<a id="about" href="about2.html" class="navigation-item">About</a>
-	</div>
+		<!-- Navigation Bar for desktop and tablet screen sizes-->
+		<div style="float: right;">
+			<a href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">
+				<img id="linkedInIcon" class="navigation-item" style="min-width: 36px; height: 36px; padding-right: 12px;" src="assets/LinkedIn-Icon-Small.png" alt="Message me on LinkedIn">
+			</a>
 
-	<!-- Navigation Menu for mobile screen sizes-->
-	<div class="navigation-menu">
-		<button onclick="dropdownToggle()" class="dropdown">Menu</button>
-		<div id="nav-dropdown" class="dropdown-content">
-			<a class="dropdown-item" href="work.html" style="padding: 20px 0 10px 20px;">My Work</a>
-			<a class="dropdown-item" href="assets/BaileyCostelloResume.pdf" target="_blank">Resume</a>
-			<a class="dropdown-item" href="about2.html">About</a>
-			<a class="dropdown-item" href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">Message me on LinkedIn</a>
-			<a class="dropdown-item" onClick="copyEmail()" style="padding: 10px 0 20px 20px;">Copy Email to Clipboard</a>
+			<a onClick="copyEmail()">
+				<img id="emailIcon" class="navigation-item" style="min-width: 36px; min-height: 36px; max-height: 36px; padding-right: 36px; margin-top: 12px;" src="assets/Email-Icon-Small.png" alt="Send me an Email">
+			</a>
+		</div>
+		<input type="text" value="bqacos@gmail.com" id="myInput" style="position: absolute; left: -1000px; top: -1000px;">
+		<div style="float: right; padding-right: 20px; padding-top: 20px ">
+			<a id="home" href="index.html" class="navigation-item">Home</a>
+			<a id="myWork" href="work.html" class="navigation-item">My Work</a>
+			<a id="resume" href="assets/BaileyCostelloResume.pdf" target="_blank" class="navigation-item">Resume</a>
+			<a id="about" href="about2.html" class="navigation-item">About</a>
+		</div>
+
+		<!-- Navigation Menu for mobile screen sizes-->
+		<div class="navigation-menu">
+			<button onclick="dropdownToggle()" class="dropdown">Menu</button>
+			<div id="nav-dropdown" class="dropdown-content">
+				<a class="dropdown-item" href="work.html" style="padding: 20px 0 10px 20px;">My Work</a>
+				<a class="dropdown-item" href="assets/BaileyCostelloResume.pdf" target="_blank">Resume</a>
+				<a class="dropdown-item" href="about2.html">About</a>
+				<a class="dropdown-item" href="https://www.linkedin.com/in/baileycostello/" target="_blank" rel="noopener noreferrer">Message me on LinkedIn</a>
+				<a class="dropdown-item" onClick="copyEmail()" style="padding: 10px 0 20px 20px;">Copy Email to Clipboard</a>
+			</div>
 		</div>
 	</div>
+	<div id="header" style="height: 20px; width: 100%; float: left;"></div>
 </div>
-<div id="header" style="height: 20px; width: 100%; float: left;"></div>
-
 
 	<!--</body>-->
