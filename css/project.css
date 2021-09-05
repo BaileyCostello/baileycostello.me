@@ -5,6 +5,7 @@
 	font-family: 'Montserrat', sans-serif;
 	src: url('/fonts/Montserrat-Regular.ttf');
 }
+/************************************************************************/
 
 h1 {
 	font-family: Montserrat;
@@ -53,7 +54,6 @@ a {
 .noteable {
 	font-family: Montserrat;
 	font-weight: 600;
-	font-size: 14pt;
 	margin: 0;
 	padding-top: 0;
 }
