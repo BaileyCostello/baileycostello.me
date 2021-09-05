@@ -129,9 +129,9 @@ a {
 		display: none;
 	}
 
-  	.navigation-menu {
-  		display: none;
-  	}
+	.navigation-menu {
+		display: none;
+	}
 
 
   	/*** GRAPHICS ***/
@@ -209,7 +209,7 @@ a {
 }
 
 @media screen and (max-width: 990px) {
-  	.one-column-content {
+  .one-column-content {
 		flex: 8;
 	}
 	.two-column-content {
@@ -233,7 +233,7 @@ a {
 }
 
 @media screen and (max-width: 750px) { /* The width is 100%, when the viewport is 750px or smaller */
-  	 .one-column-content {
+  .one-column-content {
 		flex: 10;
 	}
 

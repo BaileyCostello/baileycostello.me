@@ -92,15 +92,46 @@ a {
 		box-sizing: border-box;
 	}
 
+	.row {
+		display: flex;
+	}
+
+	.row-section-break {
+		display: flex;
+		height: 15vh;
+	}
+
+	.row-section-break-bottom-page {
+		display: flex;
+		height: 16vh;
+	}
+
+	.one-column-content {
+		flex: 6;
+		padding: 1em;
+	}
+	.two-column-content {
+		flex: 3;
+		padding: 1em;
+	}
+
+	.column-margin {
+		flex: 2;
+		padding: 1em;
+	}
+
+	/*
 	.center {
 		padding:8px;
 		float:left;
 		width:60%;
 		height: auto;
 	}
-
+	*/
+	
+	/*
 	.center-column-one { /* place within div with class .center takes up 50% of 80%*/
-		padding:8px;
+	/*	padding:8px;
 		float:left;
 		width:50%;
 		height: auto;
@@ -127,6 +158,7 @@ a {
   	.footer {
   		height: 40vh;
   	}
+		*/
 
   	.navigation-menu {
   		display: none;
@@ -142,14 +174,14 @@ a {
 }
 
 @media screen and (max-width: 1600px) {
-	.center {
+	/*.center {
 		padding:8px;
 		float:left;
 		width:80%;
 		height: auto;
 	}
 
-	.center-column-one { /* place within div with class .center takes up 50% of 80%*/
+	.center-column-one {
 		padding:8px;
 		float:left;
 		width:50%;
@@ -176,7 +208,7 @@ a {
 
   	.footer {
   		height: 40vh;
-  	}
+  	}*/
 }
 
 @media screen and (max-width: 1110px) {
@@ -189,13 +221,24 @@ a {
 }
 
 @media screen and (max-width: 990px) {
-  	.dashboard-img {
-  		margin-top: 12%;
-  		-webkit-transform: translate(0, -12%);
-		-ms-transform: translate(0, -12%);
-  		transform: translate(0, -12%);
-  	}
- }
+  .one-column-content {
+		flex: 8;
+	}
+	.two-column-content {
+		flex: 8;
+	}
+
+	.column-margin {
+		flex: 1;
+	}
+
+	.dashboard-img {
+		margin-top: 12%;
+		-webkit-transform: translate(0, -12%);
+	-ms-transform: translate(0, -12%);
+		transform: translate(0, -12%);
+	}
+}
 
  @media screen and (max-width: 860px) {
   	.dashboard-img {
@@ -207,7 +250,20 @@ a {
 }
 
 @media screen and (max-width: 750px) { /* The width is 100%, when the viewport is 750px or smaller */
-	.left, .center, .center-column-one, .center-column-two, .right {
+	.one-column-content {
+		flex: 10;
+	}
+
+	.two-column-content {
+		flex: 5;
+	}
+
+	.column-margin {
+		flex: 0;
+		padding: .5em;
+	}
+
+	/*.left, .center, .center-column-one, .center-column-two, .right {
 		width: 100%;
 	}
 
@@ -215,7 +271,7 @@ a {
 		height: auto;
 	}
 
-	.left { /* how do you make the .left and .right inherit the height of the .center? When the .center is larger than the viewport they do not line up */
+	.left { 
 		height: 20vh;
 	}
 
@@ -223,14 +279,14 @@ a {
 		display:  none;
 	}
 
-	.landing-content { /* this needs to be below width 100% */
+	.landing-content {
 		height: 60vh;
 	}
 
 	.footer {
 		height: auto;
 	}
-
+	*/
 	.dashboard-img {
 		margin-top: 0%;
 		-webkit-transform: translate(0, -0%);
