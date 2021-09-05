@@ -5,13 +5,12 @@
 	var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
 
 	if (docTitle == "Bailey Costello" && !hasVerticalScrollbar) { 
-		document.write("Doesn't have a scrollbar");
 		document.getElementById("footer").style.position = "fixed";
 		document.getElementById("footer").style.width = "100%";
 		document.getElementById("footer").style.bottom = "0";
 	}
 	else {
-		document.write("Has a scrollbar");
+		console.log("Has a scrollbar");
 	}
 </script>
 
