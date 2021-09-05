@@ -1,8 +1,10 @@
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
 <script type="text/javascript">
 	var docTitle = document.title;
+	var div = document.body;
+	var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
 
-	if (docTitle == "Bailey Costello") { 
+	if (docTitle == "Bailey Costello" && hasVerticalScrollbar) { 
 		document.getElementById("footer").style.position = "fixed";
 		document.getElementById("footer").style.width = "100%";
 		document.getElementById("footer").style.bottom = "0";
