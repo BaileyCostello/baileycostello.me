@@ -89,6 +89,16 @@ body {
 	width: 46px;
 }
 
+.footer {
+	 left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 8px 16px 8px 16px;
+   color: rgba(0, 0, 0, .7);
+   text-align: right;
+   font-size: 11pt;
+}
+
 /* responsive breakpoints & positioning *************************************/
 /*https://www.w3schools.com/html/html_responsive.asp*/
 
@@ -492,11 +502,6 @@ body {
 	max-width:  90%;
 	border: 1px solid #D8D8D8; 
 	border-radius: 8px;
-}
-
-.footer {
-	color: #FFFFFF;
-	background-color: #000000;
 }
 
 /********** My Work *************/
