@@ -52,7 +52,7 @@ a {
 }
 
 body {
-	background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 84.73%), #FFFFFF;
+	background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 84.73%), #FFFFFF;
 }
 
 .noteable {
