@@ -12,8 +12,8 @@
 }
 
 .landing-text {
-	font-weight: 500;
-	font-size: 16pt;
+	font-weight: 400;
+	font-size: 1em;
 }
 
 .tag {
@@ -69,9 +69,13 @@ a {
 	color: #000000;
 }
 
+body {
+	background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 84.73%), #FFFFFF;
+}
+
 .button {
 	font-family: Montserrat;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 14pt;
 	text-decoration: none;
 }
