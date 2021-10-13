@@ -60,28 +60,35 @@
 		<div class="row">
 			<div class="column-margin"></div>
 			<div class="one-column-content">
-				<form accept-charset="UTF-8" action="https://usebasin.com/f/ae8f9a31cc52" enctype="multipart/form-data" method="POST" target="_blank">
-					Hi, I'm 
-					<input type="text" name="name" placeholder="your name"> 
-					I'd like to 
-					<select name="topic" id="topic" placeholder="select topic">
-						<option value="" disabled selected>Topic</option>
-					    <option value="job opportunity">Chat about a job opportunity</option>
-					    <option value="grab a drink">Grab a drink and nerd out about design</option>
-					    <option value="collaborate">Collaborate on a project</option>
-					    <option value="just say hi">Just say hi</option>
-					    <option value="other">Other</option>
-					</select>
-					You can reach me at
-					<input type="email" id="email" name="email" required placeholder="email">
-					<textarea rows="4" cols="40" name="comment" required placeholder="optionalMessage"></textarea>
-					<br/>
-					<br/>
-					<div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
-					<br/>
-					<br/>
-					<button type="submit">Send</button>
-				</form>
+				<span style="text-align: center;">
+					<form accept-charset="UTF-8" action="https://usebasin.com/f/ae8f9a31cc52" enctype="multipart/form-data" method="POST" target="_blank">
+						Hi, I'm 
+						<input class="text-input" type="text" name="name" placeholder="your name"> 
+						<br/>
+						<br/>
+						I'd like to 
+						<select class="text-input" style="max-width: 400px;" name="topic" id="topic">
+							<option value="" disabled selected style="color: #4e4e4e;">topic</option>
+						    <option value="job opportunity">Chat about a job opportunity</option>
+						    <option value="grab a drink">Grab a drink and nerd out about design</option>
+						    <option value="collaborate">Collaborate on a project</option>
+						    <option value="just say hi">Just say hi</option>
+						</select>
+						<br/>
+						<br/>
+						You can reach me at
+						<input class="text-input" type="email" id="email" name="email" required placeholder="email">
+						<br/>
+						<br/>
+						<textarea class="text-area" rows="4" cols="50" name="comment" placeholder="Optional message"></textarea>
+						<br/>
+						<br/>
+						<div class="g-recaptcha" style="margin-left: 20vh;" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
+						<br/>
+						<br/>
+						<button class="button" type="submit">Send</button>
+					</form>
+				</span>
 			</div>
 			<div class="column-margin"></div>
 			</div>

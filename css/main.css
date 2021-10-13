@@ -472,6 +472,32 @@ body {
 	border-radius: 8px;
 }
 
+
+/******* contact form *********/
+.text-input {
+  border-bottom: solid .5px #919191;
+  border-radius: 1px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 2px 2px 0px 2px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  max-width: 360px;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.text-area {
+	  font-size: 16px;
+    font-family: Montserrat;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border-color: #919191;
+}
+
 /********** tooltip *************/
 
 /* .tooltip {
