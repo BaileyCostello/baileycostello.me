@@ -41,6 +41,18 @@ h1 {
 	font-size:  24pt;
 }
 
+.title-container {
+	position: relative;
+	text-align: center;
+}
+
+.title-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h2 {
 	font-family: Montserrat;
 	font-weight: 600;
@@ -329,8 +341,8 @@ body {
 	outline-width: 1px;
 }
 
+/* https://css-tricks.com/gradient-borders-in-css/ */
 .gradient-border-wrap {
-  padding: 1rem;
   border-radius: 56px;
 	background: linear-gradient(270deg, #FF778F 0%, #4460FF 100%);
   padding: 8px 2px;
