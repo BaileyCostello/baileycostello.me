@@ -167,6 +167,14 @@ body {
 	.landing-page-text {
 		top:  60%;
 	}
+
+	.desktop-cards {
+		display: flex;
+	}
+
+	.mobile-cards {
+		display:  none;
+	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -224,6 +232,30 @@ body {
 
 	.landing-page-text {
 		top: 20%;
+	}
+
+		/******* About Me ********/
+
+	.desktop-cards {
+		display: none;
+	}
+
+	.mobile-cards {
+		display:  flex;
+	}
+
+	.gradient-border-wrap-card {
+ 		min-height: 200px;
+ 		max-width: 300px;
+	}
+
+	.gradient-border-card {
+		min-height: 200px;
+		max-width: 300px;
+	}
+
+	.mobile-cards-column-margin {
+		flex: 6;
 	}
 }
 
