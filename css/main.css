@@ -338,7 +338,7 @@ body {
 }
 
 .gradient-border {
-  background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0) 84.73%), #FFFFFF;
+  background: linear-gradient(72.63deg, rgba(0, 0, 0, 0.09) -20%, rgba(0, 0, 0, 0) 120%), #FFFFFF;
   color: #000000;
   padding: 6px 0px;
   border-radius: 56px;
