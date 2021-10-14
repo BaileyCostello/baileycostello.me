@@ -1,28 +1,22 @@
-<!--<?php
-	if($_POST["message"]) {
-		mail("your@email.address", "Here is the subject line",
-		$_POST["insert your message here"]. "From: an@email.address");
-	}
-?>-->
-
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
-<!--<script type="text/javascript">
+
+<script type="text/javascript">
+
+
 	var docTitle = document.title;
 	var div = document.window;
-	var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
 
-	if (docTitle == "Bailey Costello" && !hasVerticalScrollbar) { 
+	function isMobileDevice() {
+   		return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+	};
+
+	if (docTitle == "Bailey Costello" && !isMobileDevice()) { 
 		console.log("Doesn't have a scrollbar");
 		document.getElementById("footer").style.position = "fixed";
 		document.getElementById("footer").style.width = "100%";
 		document.getElementById("footer").style.bottom = "0px";
 	}
-</script>-->
-
-<!--<form method="post" action="subscriberform.php">
-	<textarea name="message"></textarea>
-	<input type="submit">
-</form>-->
+</script>
 
 <div id="footer" class="footer">
 	<p style="font-size: 11pt;">
