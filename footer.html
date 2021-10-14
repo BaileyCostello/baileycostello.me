@@ -1,16 +1,11 @@
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
 
 <script type="text/javascript">
-
-
-	var docTitle = document.title;
-	var div = document.window;
-
 	function isMobileDevice() {
    		return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 	};
 
-	if (docTitle == "Bailey Costello" && !isMobileDevice()) { 
+	if (document.title == "Bailey Costello" && !isMobileDevice()) { 
 		console.log("Doesn't have a scrollbar");
 		document.getElementById("footer").style.position = "fixed";
 		document.getElementById("footer").style.width = "100%";
