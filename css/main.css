@@ -486,13 +486,13 @@ body {
   border-left: none;
   border-right: none;
   border-top: none;
-  padding: 2px 2px 0px 2px;
+  padding: 4px 0px 2px 0px;
   font-size: 16px;
   font-family: 'Montserrat';
   max-width: 360px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(255,255,255,0);
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 .text-area {
