@@ -134,12 +134,12 @@ body {
 
 	.row-section-break {
 		display: flex;
-		height: 15vh;
+		height: 12vh;
 	}
 
 	.row-section-break-bottom-page {
 		display: flex;
-		height: 16vh;
+		height: 14vh;
 	}
 
 	.one-column-content {
