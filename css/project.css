@@ -612,6 +612,13 @@ body {
 	border-radius: 8px;
 }
 
+.img-center {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	width:  100%;
+}
+
 .img-work {
 	max-width:  90%;
 	border: 1px solid #D8D8D8; 

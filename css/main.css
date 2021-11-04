@@ -478,6 +478,13 @@ body {
 	border-radius: 8px;
 }
 
+.img-center {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	width:  100%;
+}
+
 
 /******* contact form *********/
 .text-input {
